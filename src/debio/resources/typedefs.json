@@ -3,7 +3,19 @@
     "identifier": "0000001",
     "name": "Gene Product Has Function",
     "transitive": false,
-    "creator": "0000-0003-4423-4370"
+    "creator": "0000-0003-4423-4370",
+    "holds_over_chain": [
+      {
+        "prefix": "RO",
+        "identifier": "0002205",
+        "name": "has gene product"
+      },
+      {
+        "prefix": "RO",
+        "identifier": "0002350",
+        "name": "member of"
+      }
+    ]
   },
   {
     "identifier": "0000002",

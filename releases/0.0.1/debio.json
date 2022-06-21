@@ -1,0 +1,62 @@
+{
+  "graphs" : [ {
+    "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000004",
+      "type" : "PROPERTY",
+      "lbl" : "Antibody has target"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000005",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "Locus Group"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000002",
+      "type" : "PROPERTY",
+      "lbl" : "Has Mature miRNA"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000003",
+      "type" : "PROPERTY",
+      "lbl" : "Species Specific"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000001",
+      "type" : "PROPERTY",
+      "lbl" : "Gene Product Has Function"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
+      "type" : "PROPERTY",
+      "lbl" : "has_obo_format_version"
+    } ],
+    "edges" : [ ],
+    "id" : "http://purl.obolibrary.org/obo/debio.owl",
+    "meta" : {
+      "subsets" : [ ],
+      "xrefs" : [ ],
+      "basicPropertyValues" : [ {
+        "pred" : "http://www.geneontology.org/formats/oboInOwl#auto-generated-by",
+        "val" : "bio2obo:debio"
+      }, {
+        "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
+        "val" : "21:06:2022 16:01"
+      }, {
+        "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
+        "val" : "1.2"
+      }, {
+        "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+        "val" : "Decentralized Biomedical Ontology"
+      } ],
+      "version" : "http://purl.obolibrary.org/obo/debio/0.0.1-dev/debio.owl"
+    },
+    "equivalentNodesSets" : [ ],
+    "logicalDefinitionAxioms" : [ ],
+    "domainRangeAxioms" : [ ],
+    "propertyChainAxioms" : [ {
+      "predicateId" : "http://purl.obolibrary.org/obo/debio_0000001",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002205", "http://purl.obolibrary.org/obo/RO_0002350" ]
+    } ]
+  } ]
+}

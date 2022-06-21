@@ -1,0 +1,30 @@
+format-version: 1.2
+date: 21:06:2022 16:01
+auto-generated-by: bio2obo:debio
+data-version: 0.0.1-dev
+idspace: RO http://purl.obolibrary.org/obo/RO_
+idspace: debio https//biopragmatics.github.io/debio/
+ontology: debio
+remark: Decentralized Biomedical Ontology
+
+[Typedef]
+id: debio:0000001
+name: Gene Product Has Function
+holds_over_chain: RO:0002205 RO:0002350 ! has gene product / member of
+
+[Typedef]
+id: debio:0000002
+name: Has Mature miRNA
+
+[Typedef]
+id: debio:0000003
+name: Species Specific
+
+[Typedef]
+id: debio:0000004
+name: Antibody has target
+
+[Typedef]
+id: debio:0000005
+name: Locus Group
+is_metadata_tag: true
