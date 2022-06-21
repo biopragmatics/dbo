@@ -2,9 +2,10 @@
 
 """Test data integrity."""
 
-import unittest
 import itertools as itt
-from debio.resources import PROPERTIES, TYPEDEFS, TERMS
+import unittest
+
+from debio.resources import PROPERTIES, TERMS, TYPEDEFS
 
 
 class TestIntegrity(unittest.TestCase):
@@ -13,10 +14,7 @@ class TestIntegrity(unittest.TestCase):
     def test_identifiers(self):
         """Test identifiers are unique."""
         resources = [
-            [
-                entry["identifier"]
-                for entry in resource
-            ]
+            [entry["identifier"] for entry in resource]
             for resource in [PROPERTIES, TYPEDEFS, TERMS]
         ]
         for resource in resources:

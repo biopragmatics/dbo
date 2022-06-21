@@ -1,7 +1,7 @@
 """Resources for DeBiO."""
 
-from pathlib import Path
 import json
+from pathlib import Path
 
 __all__ = [
     "TERMS_PATH",
