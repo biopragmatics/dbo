@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:06:2022 16:01
+date: 21:06:2022 19:17
 auto-generated-by: bio2obo:debio
 data-version: 0.0.1-dev
 idspace: RO http://purl.obolibrary.org/obo/RO_
@@ -9,12 +9,12 @@ remark: Decentralized Biomedical Ontology
 
 [Typedef]
 id: debio:0000001
-name: Gene Product Has Function
+name: gene product is a member of
 holds_over_chain: RO:0002205 RO:0002350 ! has gene product / member of
 
 [Typedef]
 id: debio:0000002
-name: Has Mature miRNA
+name: has mature miRNA
 
 [Typedef]
 id: debio:0000003
@@ -28,3 +28,12 @@ name: Antibody has target
 id: debio:0000005
 name: Locus Group
 is_metadata_tag: true
+
+[Typedef]
+id: debio:0000006
+name: has salt
+
+[Typedef]
+id: debio:0000007
+name: species specific
+def: "X speciesSpecific Y means that Y is a general phenomena, like a pathway, and X is the version that appears in a species. X should state which species with RO:0002162 (in taxon)"

@@ -11,7 +11,7 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/debio.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/debio/0.0.1-dev/debio.owl"/>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio2obo:debio</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21:06:2022 16:01</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21:06:2022 19:17</oboInOwl:date>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decentralized Biomedical Ontology</rdfs:comment>
     </owl:Ontology>
@@ -26,6 +26,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -108,7 +116,7 @@
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
         </owl:propertyChainAxiom>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">debio:0000001</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene Product Has Function</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene product is a member of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -117,7 +125,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000002">
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">debio:0000002</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has Mature miRNA</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has mature miRNA</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -136,6 +144,25 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000004">
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">debio:0000004</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antibody has target</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000006 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000006">
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">debio:0000006</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has salt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000007 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000007">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X speciesSpecific Y means that Y is a general phenomena, like a pathway, and X is the version that appears in a species. X should state which species with RO:0002162 (in taxon)</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">debio:0000007</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">species specific</rdfs:label>
     </owl:ObjectProperty>
 </rdf:RDF>
 

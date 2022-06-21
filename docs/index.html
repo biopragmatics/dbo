@@ -40,11 +40,11 @@
 
 <div class="container" style="margin-top: 50px; margin-bottom: 50px">
 <div class="card">
-        <div class="card-header">
-            Decentralized Biomedical Ontology
-        </div>
+        <h5 class="card-header">
+            Metadata
+        </h5>
         <div class="card-body">
-            <p>Decentralized Biomedical Ontology</p>
+            <p>A repository for the TSV-based, decentralized, community-curated curation of terms, properties, and relations that get turned into OBO, OWL, and OBO Graph JSON.</p>
             <dl>
                     <dt>Data Version</dt>
                     <dd>0.0.1-dev</dd>
@@ -54,64 +54,80 @@
                         <code>bioregistry:debio</code>
                     </a>
                 </dd>
+                        <dt><span class="badge badge-info">Prefix</span> debio</dt>
+                        <dd>https//biopragmatics.github.io/debio/</dd>
+                        <dt><span class="badge badge-info">Prefix</span> RO</dt>
+                        <dd>http://purl.obolibrary.org/obo/RO_</dd>
             </dl>
 
-                <h3>Prefix Map</h3>
-                <dl class="row">
-                        <dt class="col-sm-3 text-right">debio</dt>
-                        <dd class="col-sm-9 text-left">https//biopragmatics.github.io/debio/</dd>
-                        <dt class="col-sm-3 text-right">RO</dt>
-                        <dd class="col-sm-9 text-left">http://purl.obolibrary.org/obo/RO_</dd>
-                </dl>
-                <h3>Terms, Relations, and Properties</h3>
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <td>Type</td>
-                        <td>Identifier</td>
-                        <td>Name</td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                    TypeDef
-                            </td>
-                            <td><a href="0000001">0000001</a></td>
-                            <td>Gene Product Has Function</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                    TypeDef
-                            </td>
-                            <td><a href="0000002">0000002</a></td>
-                            <td>Has Mature miRNA</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                    TypeDef
-                            </td>
-                            <td><a href="0000003">0000003</a></td>
-                            <td>Species Specific</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                    TypeDef
-                            </td>
-                            <td><a href="0000004">0000004</a></td>
-                            <td>Antibody has target</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                    Property
-                            </td>
-                            <td><a href="0000005">0000005</a></td>
-                            <td>Locus Group</td>
-                        </tr>
-                    </tbody>
-                </table>
         </div>
-    </div></div>
+    </div>
+        <div class="card" style="margin-top: 1em;">
+            <h5 class="card-header">
+                Terms, Relations, and Properties
+            </h5>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Local Identifier</th>
+                    <th>Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                                TypeDef
+                        </td>
+                        <td align="right"><a href="0000001">0000001</a></td>
+                        <td>gene product is a member of</td>
+                    </tr>
+                    <tr>
+                        <td>
+                                TypeDef
+                        </td>
+                        <td align="right"><a href="0000002">0000002</a></td>
+                        <td>has mature miRNA</td>
+                    </tr>
+                    <tr>
+                        <td>
+                                TypeDef
+                        </td>
+                        <td align="right"><a href="0000003">0000003</a></td>
+                        <td>Species Specific</td>
+                    </tr>
+                    <tr>
+                        <td>
+                                TypeDef
+                        </td>
+                        <td align="right"><a href="0000004">0000004</a></td>
+                        <td>Antibody has target</td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Property
+                        </td>
+                        <td align="right"><a href="0000005">0000005</a></td>
+                        <td>Locus Group</td>
+                    </tr>
+                    <tr>
+                        <td>
+                                TypeDef
+                        </td>
+                        <td align="right"><a href="0000006">0000006</a></td>
+                        <td>has salt</td>
+                    </tr>
+                    <tr>
+                        <td>
+                                TypeDef
+                        </td>
+                        <td align="right"><a href="0000007">0000007</a></td>
+                        <td>species specific</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</div>
 
 <footer class="footer">
     <p class="small text-center text-muted">

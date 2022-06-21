@@ -43,6 +43,7 @@ def _get_typedef(typedef, is_metadata_tag: Optional[bool] = None) -> TypeDef:
             identifier=typedef["identifier"],
             name=typedef["name"],
         ),
+        definition=typedef.get("description"),
         holds_over_chain=[
             Reference(
                 prefix=reference["prefix"],

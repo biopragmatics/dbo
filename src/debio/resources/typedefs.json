@@ -1,7 +1,7 @@
 [
   {
     "identifier": "0000001",
-    "name": "Gene Product Has Function",
+    "name": "gene product is a member of",
     "transitive": false,
     "creator": "0000-0003-4423-4370",
     "holds_over_chain": [
@@ -19,7 +19,7 @@
   },
   {
     "identifier": "0000002",
-    "name": "Has Mature miRNA",
+    "name": "has mature miRNA",
     "transitive": false,
     "creator": "0000-0003-4423-4370"
   },
@@ -34,5 +34,18 @@
     "name": "Antibody has target",
     "transitive": false,
     "creator": "0000-0003-4423-4370"
+  },
+  {
+    "identifier": "0000006",
+    "name": "has salt",
+    "transitive": false,
+    "creator": "0000-0003-4423-4370"
+  },
+  {
+    "identifier": "0000007",
+    "name": "species specific",
+    "transitive": false,
+    "creator": "0000-0003-4423-4370",
+    "description": "X speciesSpecific Y means that Y is a general phenomena, like a pathway, and X is the version that appears in a species. X should state which species with RO:0002162 (in taxon)"
   }
 ]
