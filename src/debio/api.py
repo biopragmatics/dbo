@@ -95,7 +95,7 @@ def _main():
     ontology.write_obo(obo_path)
     convert_to_obograph(input_path=obo_path, json_path=stub.with_suffix(".json"))
     convert(input_path=obo_path, output_path=stub.with_suffix(".owl"))
-    make_site(ontology, DOCS)
+    make_site(ontology, DOCS, manifest=True)
 
 
 if __name__ == "__main__":
