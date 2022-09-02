@@ -5,9 +5,7 @@
 from pathlib import Path
 from typing import Iterable, List, Optional
 
-from bioontologies.robot import convert, convert_to_obograph
 from pyobo import Obo, Reference, SynonymTypeDef, Term, TypeDef
-from pyobo.ssg import make_site
 
 from debio.resources import PROPERTIES, TERMS, TYPEDEFS
 from debio.version import VERSION
@@ -53,6 +51,10 @@ def _get_typedef(typedef, is_metadata_tag: Optional[bool] = None) -> TypeDef:
             for reference in typedef.get("holds_over_chain", [])
         ],
         is_metadata_tag=is_metadata_tag,
+        xrefs=[
+            Reference(prefix=xref["prefix"], identifier=xref["identifier"], name=xref.get("name"))
+            for xref in typedef.get("xrefs", [])
+        ],
     )
 
 
@@ -87,16 +89,28 @@ class DecentralizedBiomedicalOntology(Obo):
         return VERSION
 
 
-def _main():
-    ontology = DecentralizedBiomedicalOntology()
-    releases = ROOT.joinpath("releases", ontology.data_version.removesuffix("-dev"))
-    releases.mkdir(parents=True, exist_ok=True)
-    stub = releases.joinpath(ontology.ontology)
+def _write(ontology: Obo, directory: Path):
+    from bioontologies.robot import convert, convert_to_obograph
+
+    directory.mkdir(exist_ok=True, parents=True)
+    stub = directory.joinpath(ontology.ontology)
     obo_path = stub.with_suffix(".obo")
     ontology.write_obo(obo_path)
     convert_to_obograph(input_path=obo_path, json_path=stub.with_suffix(".json"))
     convert(input_path=obo_path, output_path=stub.with_suffix(".owl"))
+
+
+def _main():
+    from pyobo.ssg import make_site
+
+    ontology = DecentralizedBiomedicalOntology()
     make_site(ontology, DOCS, manifest=True)
+
+    current = ROOT.joinpath("releases", "current")
+    _write(ontology, current)
+    if not ontology.data_version.endswith("-dev"):
+        release = ROOT.joinpath("releases", ontology.data_version.removesuffix("-dev"))
+        _write(ontology, release)
 
 
 if __name__ == "__main__":
