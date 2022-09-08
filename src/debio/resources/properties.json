@@ -9,7 +9,10 @@
     "name": "monoisotopic mass",
     "creator": "0000-0003-4423-4370",
     "xrefs": [
-      {"prefix": "obo", "identifier": "chebi/monoisotopicmass"}
+      {
+        "prefix": "obo",
+        "identifier": "chebi/monoisotopicmass"
+      }
     ]
   },
   {
@@ -17,7 +20,10 @@
     "name": "charge",
     "creator": "0000-0003-4423-4370",
     "xrefs": [
-      {"prefix": "obo", "identifier": "chebi/charge"}
+      {
+        "prefix": "obo",
+        "identifier": "chebi/charge"
+      }
     ]
   },
   {
@@ -25,14 +31,25 @@
     "name": "formula",
     "creator": "0000-0003-4423-4370",
     "xrefs": [
-      {"prefix": "obo", "identifier": "chebi/formula"}
+      {
+        "prefix": "obo",
+        "identifier": "chebi/formula"
+      },
+      {
+        "prefix": "obo",
+        "identifier": "fbbt#FORMULA"
+      }
     ]
-  },{
+  },
+  {
     "identifier": "0000019",
     "name": "mass",
     "creator": "0000-0003-4423-4370",
     "xrefs": [
-      {"prefix": "obo", "identifier": "chebi/mass"}
+      {
+        "prefix": "obo",
+        "identifier": "chebi/mass"
+      }
     ]
   },
   {
@@ -40,7 +57,14 @@
     "name": "InChI",
     "creator": "0000-0003-4423-4370",
     "xrefs": [
-      {"prefix": "obo", "identifier": "chebi/inchi"}
+      {
+        "prefix": "obo",
+        "identifier": "chebi/inchi"
+      },
+      {
+        "prefix": "obo",
+        "identifier": "fbbt#InChI"
+      }
     ]
   },
   {
@@ -48,7 +72,14 @@
     "name": "InChI Key",
     "creator": "0000-0003-4423-4370",
     "xrefs": [
-      {"prefix": "obo", "identifier": "chebi/inchikey"}
+      {
+        "prefix": "obo",
+        "identifier": "chebi/inchikey"
+      },
+      {
+        "prefix": "obo",
+        "identifier": "fbbt#InChIKey"
+      }
     ]
   },
   {
@@ -56,7 +87,51 @@
     "name": "smiles",
     "creator": "0000-0003-4423-4370",
     "xrefs": [
-      {"prefix": "obo", "identifier": "chebi/smiles"}
+      {
+        "prefix": "obo",
+        "identifier": "chebi/smiles"
+      },
+      {
+        "prefix": "obo",
+        "identifier": "fbbt#SMILES"
+      }
+    ]
+  },
+  {
+    "identifier": "0000023",
+    "name": "has taxonomy rank",
+    "creator": "0000-0003-4423-4370",
+    "xrefs": [
+      {
+        "prefix": "obo",
+        "identifier": "ncbitaxon#has_rank"
+      }
+    ]
+  },
+  {
+    "identifier": "0000024",
+    "name": "has species group",
+    "creator": "0000-0003-4423-4370",
+    "xrefs": [
+      {
+        "prefix": "obo",
+        "identifier": "NCBITaxon#_species_group"
+      }
+    ]
+  },
+  {
+    "identifier": "0000026",
+    "name": "IUPAC Name",
+    "creator": "0000-0003-4423-4370",
+    "xrefs": [
+      {
+        "prefix": "obo",
+        "identifier": "chebi#IUPAC_NAME"
+      },
+      {
+        "prefix": "obo",
+        "identifier": "fbbt#IUPAC_NAME"
+      }
     ]
   }
 ]

@@ -122,5 +122,14 @@
     "xrefs": [
       {"prefix": "obo", "identifier": "chebi#has_functional_parent"}
     ]
+  },
+  {
+    "identifier": "0000025",
+    "name": "has origin",
+    "creator": "0000-0003-4423-4370",
+    "description": "Related to sequences",
+    "xrefs": [
+      {"prefix": "obo", "identifier": "so#has_origin"}
+    ]
   }
 ]
