@@ -25,9 +25,10 @@
   },
   {
     "identifier": "0000003",
-    "name": "Species Specific",
+    "name": "species specific",
     "transitive": false,
-    "creator": "0000-0003-4423-4370"
+    "creator": "0000-0003-4423-4370",
+    "description": "X speciesSpecific Y means that Y is a general phenomena, like a pathway, and X is the version that appears in a species. X should state which species with RO:0002162 (in taxon)"
   },
   {
     "identifier": "0000004",
@@ -43,90 +44,83 @@
   },
   {
     "identifier": "0000007",
-    "name": "species specific",
-    "transitive": false,
-    "creator": "0000-0003-4423-4370",
-    "description": "X speciesSpecific Y means that Y is a general phenomena, like a pathway, and X is the version that appears in a species. X should state which species with RO:0002162 (in taxon)"
-  },
-  {
-    "identifier": "0000008",
     "name": "has left-to-right reaction",
     "transitive": false,
     "creator": "0000-0003-4423-4370",
     "description": "X ltr Y means reaction X of undetermined direction has a left-to-right reaction Y. Relevant for Rhea."
   },
   {
-    "identifier": "0000009",
+    "identifier": "0000008",
     "name": "has right-to-left reaction",
     "transitive": false,
     "creator": "0000-0003-4423-4370",
     "description": "X rtl Y means reaction X of undetermined direction has a right-to-left reaction Y. Relevant for Rhea."
   },
   {
-    "identifier": "0000010",
+    "identifier": "0000009",
     "name": "has bi-directional reaction",
     "transitive": false,
     "creator": "0000-0003-4423-4370",
     "description": "X bi Y means reaction X of undetermined direction has a bidirectional reaction Y. Relevant for Rhea."
   },
   {
-    "identifier": "0000011",
+    "identifier": "0000010",
     "name": "is conjugate base of",
     "transitive": false,
     "creator": "0000-0003-4423-4370",
     "description": "X is conjugate base of Y typically means that X is a deprotonated form of Y",
     "xrefs": [
-      {"prefix": "chebi", "identifier": "is_conjugate_base_of"}
+      {"prefix": "obo", "identifier": "chebi#is_conjugate_base_of"}
     ]
   },
   {
-    "identifier": "0000012",
+    "identifier": "0000011",
     "name": "is conjugate acid of",
     "transitive": false,
     "creator": "0000-0003-4423-4370",
     "description": "X is conjugate acid of Y typically means that Y is a protonated form of X",
     "xrefs": [
-      {"prefix": "chebi", "identifier": "is_conjugate_acid_of"}
+      {"prefix": "obo", "identifier": "chebi#is_conjugate_acid_of"}
     ]
   },
   {
-    "identifier": "0000013",
+    "identifier": "0000012",
     "name": "is enantiomer of",
     "transitive": false,
     "creator": "0000-0003-4423-4370",
     "description": "X and Y are in an enantiomeric relationship if flipping all stereocenters of X results in Y",
     "xrefs": [
-      {"prefix": "chebi", "identifier": "is_enantiomer_of"}
+      {"prefix": "obo", "identifier": "chebi#is_enantiomer_of"}
     ]
   },
   {
-    "identifier": "0000014",
+    "identifier": "0000013",
     "name": "is tautomer of",
     "transitive": false,
     "creator": "0000-0003-4423-4370",
     "description": "X and Y are tautomers if they are different realizations of the resonance structure of the same molecule",
     "xrefs": [
-      {"prefix": "chebi", "identifier": "is_tautomer_of"}
+      {"prefix": "obo", "identifier": "chebi#is_tautomer_of"}
     ]
   },
   {
-    "identifier": "0000015",
+    "identifier": "0000014",
     "name": "has parent hydride",
     "transitive": false,
     "creator": "0000-0003-4423-4370",
     "description": "X has parent hydride Y if the substituents on X are replaced with hydrogens. E.g., SbCl3 has parent hydride SbH3",
     "xrefs": [
-      {"prefix": "chebi", "identifier": "has_parent_hydride"}
+      {"prefix": "obo", "identifier": "chebi#has_parent_hydride"}
     ]
   },
   {
-    "identifier": "0000016",
+    "identifier": "0000015",
     "name": "has functional parent",
     "transitive": false,
     "creator": "0000-0003-4423-4370",
-    "description": "X has functional parent Y if X is a derivitave (e.g., a salt) of Y. E.g., bepridil hydrochloride has functional parent bepridil",
+    "description": "X has functional parent Y if X is a derivative (e.g., a salt) of Y. E.g., bepridil hydrochloride has functional parent bepridil",
     "xrefs": [
-      {"prefix": "chebi", "identifier": "has_functional_parent"}
+      {"prefix": "obo", "identifier": "chebi#has_functional_parent"}
     ]
   }
 ]
