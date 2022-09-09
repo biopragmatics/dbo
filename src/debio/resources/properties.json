@@ -133,5 +133,20 @@
         "identifier": "fbbt#IUPAC_NAME"
       }
     ]
+  },
+  {
+    "identifier": "0000028",
+    "name": "International Nonproprietary Name",
+    "creator": "0000-0003-4423-4370",
+    "xrefs": [
+      {
+        "prefix": "obo",
+        "identifier": "chebi#INN"
+      },
+      {
+        "prefix": "obo",
+        "identifier": "fbbt#INN"
+      }
+    ]
   }
 ]

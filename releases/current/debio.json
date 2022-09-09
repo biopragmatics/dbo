@@ -1,6 +1,21 @@
 {
   "graphs" : [ {
     "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000028",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "obo:chebi#INN"
+        }, {
+          "val" : "obo:fbbt#INN"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "International Nonproprietary Name"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/debio_0000006",
       "type" : "PROPERTY",
       "lbl" : "has salt"
@@ -333,7 +348,7 @@
         "val" : "bio2obo:debio"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "09:09:2022 15:49"
+        "val" : "09:09:2022 16:20"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
