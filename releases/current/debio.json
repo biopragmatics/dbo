@@ -1,0 +1,341 @@
+{
+  "graphs" : [ {
+    "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000006",
+      "type" : "PROPERTY",
+      "lbl" : "has salt"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000007",
+      "meta" : {
+        "definition" : {
+          "val" : "X ltr Y means reaction X of undetermined direction has a left-to-right reaction Y. Relevant for Rhea.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has left-to-right reaction"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000026",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "obo:fbbt#IUPAC_NAME"
+        }, {
+          "val" : "obo:chebi#IUPAC_NAME"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "IUPAC Name"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000004",
+      "type" : "PROPERTY",
+      "lbl" : "Antibody has target"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000005",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "locus group"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000024",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "obo:NCBITaxon#_species_group"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has species group"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000002",
+      "type" : "PROPERTY",
+      "lbl" : "has mature miRNA"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000025",
+      "meta" : {
+        "definition" : {
+          "val" : "Related to sequences",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "obo:so#has_origin"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has origin"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000003",
+      "meta" : {
+        "definition" : {
+          "val" : "X speciesSpecific Y means that Y is a general phenomena, like a pathway, and X is the version that appears in a species. X should state which species with RO:0002162 (in taxon)",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "PROPERTY",
+      "lbl" : "species specific"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000022",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "obo:fbbt#SMILES"
+        }, {
+          "val" : "obo:chebi/smiles"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "smiles"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000001",
+      "type" : "PROPERTY",
+      "lbl" : "gene product is a member of"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000023",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "obo:ncbitaxon#has_rank"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has taxonomy rank"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+      "type" : "PROPERTY",
+      "lbl" : "database_cross_reference"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000020",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "obo:fbbt#InChI"
+        }, {
+          "val" : "obo:chebi/inchi"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "InChI"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000021",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "obo:chebi/inchikey"
+        }, {
+          "val" : "obo:fbbt#InChIKey"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "InChI Key"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
+      "type" : "PROPERTY",
+      "lbl" : "has_obo_format_version"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "type" : "PROPERTY",
+      "lbl" : "definition"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000008",
+      "meta" : {
+        "definition" : {
+          "val" : "X rtl Y means reaction X of undetermined direction has a right-to-left reaction Y. Relevant for Rhea.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has right-to-left reaction"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000009",
+      "meta" : {
+        "definition" : {
+          "val" : "X bi Y means reaction X of undetermined direction has a bidirectional reaction Y. Relevant for Rhea.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has bi-directional reaction"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000017",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "obo:chebi/charge"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "charge"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000018",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "obo:chebi/formula"
+        }, {
+          "val" : "obo:fbbt#FORMULA"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "formula"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000015",
+      "meta" : {
+        "definition" : {
+          "val" : "X has functional parent Y if X is a derivative (e.g., a salt) of Y. E.g., bepridil hydrochloride has functional parent bepridil",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "obo:chebi#has_functional_parent"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has functional parent"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000016",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "obo:chebi/monoisotopicmass"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "monoisotopic mass"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000013",
+      "meta" : {
+        "definition" : {
+          "val" : "X and Y are tautomers if they are different realizations of the resonance structure of the same molecule",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "obo:chebi#is_tautomer_of"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "is tautomer of"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000014",
+      "meta" : {
+        "definition" : {
+          "val" : "X has parent hydride Y if the substituents on X are replaced with hydrogens. E.g., SbCl3 has parent hydride SbH3",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "obo:chebi#has_parent_hydride"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has parent hydride"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000011",
+      "meta" : {
+        "definition" : {
+          "val" : "X is conjugate acid of Y typically means that Y is a protonated form of X",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "obo:chebi#is_conjugate_acid_of"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "is conjugate acid of"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000012",
+      "meta" : {
+        "definition" : {
+          "val" : "X and Y are in an enantiomeric relationship if flipping all stereocenters of X results in Y",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "obo:chebi#is_enantiomer_of"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "is enantiomer of"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000010",
+      "meta" : {
+        "definition" : {
+          "val" : "X is conjugate base of Y typically means that X is a deprotonated form of Y",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "obo:chebi#is_conjugate_base_of"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "is conjugate base of"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000019",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "obo:chebi/mass"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "mass"
+    } ],
+    "edges" : [ ],
+    "id" : "http://purl.obolibrary.org/obo/debio.owl",
+    "meta" : {
+      "subsets" : [ ],
+      "xrefs" : [ ],
+      "basicPropertyValues" : [ {
+        "pred" : "http://www.geneontology.org/formats/oboInOwl#auto-generated-by",
+        "val" : "bio2obo:debio"
+      }, {
+        "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
+        "val" : "09:09:2022 11:55"
+      }, {
+        "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
+        "val" : "1.2"
+      }, {
+        "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+        "val" : "Decentralized Biomedical Ontology"
+      } ],
+      "version" : "http://purl.obolibrary.org/obo/debio/0.1.0-dev/debio.owl"
+    },
+    "equivalentNodesSets" : [ ],
+    "logicalDefinitionAxioms" : [ ],
+    "domainRangeAxioms" : [ ],
+    "propertyChainAxioms" : [ {
+      "predicateId" : "http://purl.obolibrary.org/obo/debio_0000001",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002205", "http://purl.obolibrary.org/obo/RO_0002350" ]
+    } ]
+  } ]
+}

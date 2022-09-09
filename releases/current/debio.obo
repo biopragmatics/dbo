@@ -1,0 +1,158 @@
+format-version: 1.2
+date: 09:09:2022 11:55
+auto-generated-by: bio2obo:debio
+data-version: 0.1.0-dev
+idspace: RO http://purl.obolibrary.org/obo/RO_
+idspace: debio https://biopragmatics.github.io/debio/
+idspace: obo http://purl.obolibrary.org/obo/
+ontology: debio
+remark: Decentralized Biomedical Ontology
+
+[Typedef]
+id: debio:0000001
+name: gene product is a member of
+holds_over_chain: RO:0002205 RO:0002350 ! has gene product / member of
+
+[Typedef]
+id: debio:0000002
+name: has mature miRNA
+
+[Typedef]
+id: debio:0000003
+name: species specific
+def: "X speciesSpecific Y means that Y is a general phenomena, like a pathway, and X is the version that appears in a species. X should state which species with RO:0002162 (in taxon)"
+
+[Typedef]
+id: debio:0000004
+name: Antibody has target
+
+[Typedef]
+id: debio:0000005
+name: locus group
+is_metadata_tag: true
+
+[Typedef]
+id: debio:0000006
+name: has salt
+
+[Typedef]
+id: debio:0000007
+name: has left-to-right reaction
+def: "X ltr Y means reaction X of undetermined direction has a left-to-right reaction Y. Relevant for Rhea."
+
+[Typedef]
+id: debio:0000008
+name: has right-to-left reaction
+def: "X rtl Y means reaction X of undetermined direction has a right-to-left reaction Y. Relevant for Rhea."
+
+[Typedef]
+id: debio:0000009
+name: has bi-directional reaction
+def: "X bi Y means reaction X of undetermined direction has a bidirectional reaction Y. Relevant for Rhea."
+
+[Typedef]
+id: debio:0000010
+name: is conjugate base of
+def: "X is conjugate base of Y typically means that X is a deprotonated form of Y"
+xref: obo:chebi#is_conjugate_base_of
+
+[Typedef]
+id: debio:0000011
+name: is conjugate acid of
+def: "X is conjugate acid of Y typically means that Y is a protonated form of X"
+xref: obo:chebi#is_conjugate_acid_of
+
+[Typedef]
+id: debio:0000012
+name: is enantiomer of
+def: "X and Y are in an enantiomeric relationship if flipping all stereocenters of X results in Y"
+xref: obo:chebi#is_enantiomer_of
+
+[Typedef]
+id: debio:0000013
+name: is tautomer of
+def: "X and Y are tautomers if they are different realizations of the resonance structure of the same molecule"
+xref: obo:chebi#is_tautomer_of
+
+[Typedef]
+id: debio:0000014
+name: has parent hydride
+def: "X has parent hydride Y if the substituents on X are replaced with hydrogens. E.g., SbCl3 has parent hydride SbH3"
+xref: obo:chebi#has_parent_hydride
+
+[Typedef]
+id: debio:0000015
+name: has functional parent
+def: "X has functional parent Y if X is a derivative (e.g., a salt) of Y. E.g., bepridil hydrochloride has functional parent bepridil"
+xref: obo:chebi#has_functional_parent
+
+[Typedef]
+id: debio:0000016
+name: monoisotopic mass
+is_metadata_tag: true
+xref: obo:chebi/monoisotopicmass
+
+[Typedef]
+id: debio:0000017
+name: charge
+is_metadata_tag: true
+xref: obo:chebi/charge
+
+[Typedef]
+id: debio:0000018
+name: formula
+is_metadata_tag: true
+xref: obo:chebi/formula
+xref: obo:fbbt#FORMULA
+
+[Typedef]
+id: debio:0000019
+name: mass
+is_metadata_tag: true
+xref: obo:chebi/mass
+
+[Typedef]
+id: debio:0000020
+name: InChI
+is_metadata_tag: true
+xref: obo:chebi/inchi
+xref: obo:fbbt#InChI
+
+[Typedef]
+id: debio:0000021
+name: InChI Key
+is_metadata_tag: true
+xref: obo:chebi/inchikey
+xref: obo:fbbt#InChIKey
+
+[Typedef]
+id: debio:0000022
+name: smiles
+is_metadata_tag: true
+xref: obo:chebi/smiles
+xref: obo:fbbt#SMILES
+
+[Typedef]
+id: debio:0000023
+name: has taxonomy rank
+is_metadata_tag: true
+xref: obo:ncbitaxon#has_rank
+
+[Typedef]
+id: debio:0000024
+name: has species group
+is_metadata_tag: true
+xref: obo:NCBITaxon#_species_group
+
+[Typedef]
+id: debio:0000025
+name: has origin
+def: "Related to sequences"
+xref: obo:so#has_origin
+
+[Typedef]
+id: debio:0000026
+name: IUPAC Name
+is_metadata_tag: true
+xref: obo:chebi#IUPAC_NAME
+xref: obo:fbbt#IUPAC_NAME
