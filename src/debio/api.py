@@ -2,6 +2,7 @@
 
 """Main code."""
 
+import logging
 from pathlib import Path
 from typing import Iterable, List, Optional
 
@@ -13,6 +14,8 @@ from debio.version import VERSION
 __all__ = [
     "DecentralizedBiomedicalOntology",
 ]
+
+logger = logging.getLogger(__name__)
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.parent.resolve()
@@ -83,6 +86,7 @@ class DecentralizedBiomedicalOntology(Obo):
     typedefs = list(get_typedefs())
     synonym_typedefs = list(get_synonyms())
     idspaces = IDSPACES
+    data_version = VERSION
 
     def iter_terms(self, force: bool = False) -> Iterable[Term]:
         """Iterate over terms in the ontology."""
@@ -92,36 +96,23 @@ class DecentralizedBiomedicalOntology(Obo):
         return VERSION
 
 
-def _write(ontology: Obo, directory: Path):
-    from bioontologies.robot import convert, convert_to_obograph
+def write(ontology: Obo, directory: Path) -> None:
+    """Write ontology artifacts."""
+    from bioontologies.robot import convert, convert_to_obograph, is_available
 
     directory.mkdir(exist_ok=True, parents=True)
     stub = directory.joinpath(ontology.ontology)
     obo_path = stub.with_suffix(".obo")
     ontology.write_obo(obo_path)
-    convert_to_obograph(input_path=obo_path, json_path=stub.with_suffix(".json"))
-    convert(
-        input_path=obo_path,
-        output_path=stub.with_suffix(".owl"),
-        extra_args=[
-            "--prefix",
-            f"'{PREFIX}: {URI_PREFIX}'",
-        ],
-    )
-
-
-def _main():
-    from pyobo.ssg import make_site
-
-    ontology = DecentralizedBiomedicalOntology()
-    make_site(ontology, DOCS, manifest=True)
-
-    current = ROOT.joinpath("releases", "current")
-    _write(ontology, current)
-    if not ontology.data_version.endswith("-dev"):
-        release = ROOT.joinpath("releases", ontology.data_version.removesuffix("-dev"))
-        _write(ontology, release)
-
-
-if __name__ == "__main__":
-    _main()
+    if not is_available():
+        logger.warning("ROBOT is not available - can not create OWL and OBO Graph JSON artifacts")
+    else:
+        convert_to_obograph(input_path=obo_path, json_path=stub.with_suffix(".json"))
+        convert(
+            input_path=obo_path,
+            output_path=stub.with_suffix(".owl"),
+            extra_args=[
+                "--prefix",
+                f"'{PREFIX}: {URI_PREFIX}'",
+            ],
+        )
