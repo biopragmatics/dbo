@@ -4,8 +4,8 @@ prune scripts
 prune notebooks
 prune tests/.pytest_cache
 
-prune docs/build
-prune docs/source/api
+prune docs
+prune releases
 
 recursive-include docs/source *.py
 recursive-include docs/source *.rst
