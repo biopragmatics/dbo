@@ -19,10 +19,11 @@ ROOT = HERE.parent.parent.resolve()
 DOCS = ROOT.joinpath("docs")
 
 PREFIX = "debio"
-URI_PREFIX = "https//biopragmatics.github.io/debio/"
+URI_PREFIX = "https://biopragmatics.github.io/debio/"
 IDSPACES = {
     PREFIX: URI_PREFIX,
     "RO": "http://purl.obolibrary.org/obo/RO_",
+    "obo": "http://purl.obolibrary.org/obo/",
 }
 
 
@@ -55,6 +56,8 @@ def _get_typedef(typedef, is_metadata_tag: Optional[bool] = None) -> TypeDef:
             Reference(prefix=xref["prefix"], identifier=xref["identifier"], name=xref.get("name"))
             for xref in typedef.get("xrefs", [])
         ],
+        # TODO uncomment after next pyobo release
+        # created_by=f"orcid:{typedef['creator']}"
     )
 
 
@@ -97,7 +100,14 @@ def _write(ontology: Obo, directory: Path):
     obo_path = stub.with_suffix(".obo")
     ontology.write_obo(obo_path)
     convert_to_obograph(input_path=obo_path, json_path=stub.with_suffix(".json"))
-    convert(input_path=obo_path, output_path=stub.with_suffix(".owl"))
+    convert(
+        input_path=obo_path,
+        output_path=stub.with_suffix(".owl"),
+        extra_args=[
+            "--prefix",
+            f"'{PREFIX}: {URI_PREFIX}'",
+        ],
+    )
 
 
 def _main():
