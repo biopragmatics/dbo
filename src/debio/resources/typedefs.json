@@ -70,7 +70,10 @@
     "creator": "0000-0003-4423-4370",
     "description": "X is conjugate base of Y typically means that X is a deprotonated form of Y",
     "xrefs": [
-      {"prefix": "obo", "identifier": "chebi#is_conjugate_base_of"}
+      {
+        "prefix": "obo",
+        "identifier": "chebi#is_conjugate_base_of"
+      }
     ]
   },
   {
@@ -80,7 +83,10 @@
     "creator": "0000-0003-4423-4370",
     "description": "X is conjugate acid of Y typically means that Y is a protonated form of X",
     "xrefs": [
-      {"prefix": "obo", "identifier": "chebi#is_conjugate_acid_of"}
+      {
+        "prefix": "obo",
+        "identifier": "chebi#is_conjugate_acid_of"
+      }
     ]
   },
   {
@@ -90,7 +96,10 @@
     "creator": "0000-0003-4423-4370",
     "description": "X and Y are in an enantiomeric relationship if flipping all stereocenters of X results in Y",
     "xrefs": [
-      {"prefix": "obo", "identifier": "chebi#is_enantiomer_of"}
+      {
+        "prefix": "obo",
+        "identifier": "chebi#is_enantiomer_of"
+      }
     ]
   },
   {
@@ -100,7 +109,10 @@
     "creator": "0000-0003-4423-4370",
     "description": "X and Y are tautomers if they are different realizations of the resonance structure of the same molecule",
     "xrefs": [
-      {"prefix": "obo", "identifier": "chebi#is_tautomer_of"}
+      {
+        "prefix": "obo",
+        "identifier": "chebi#is_tautomer_of"
+      }
     ]
   },
   {
@@ -110,7 +122,10 @@
     "creator": "0000-0003-4423-4370",
     "description": "X has parent hydride Y if the substituents on X are replaced with hydrogens. E.g., SbCl3 has parent hydride SbH3",
     "xrefs": [
-      {"prefix": "obo", "identifier": "chebi#has_parent_hydride"}
+      {
+        "prefix": "obo",
+        "identifier": "chebi#has_parent_hydride"
+      }
     ]
   },
   {
@@ -120,7 +135,10 @@
     "creator": "0000-0003-4423-4370",
     "description": "X has functional parent Y if X is a derivative (e.g., a salt) of Y. E.g., bepridil hydrochloride has functional parent bepridil",
     "xrefs": [
-      {"prefix": "obo", "identifier": "chebi#has_functional_parent"}
+      {
+        "prefix": "obo",
+        "identifier": "chebi#has_functional_parent"
+      }
     ]
   },
   {
@@ -129,7 +147,22 @@
     "creator": "0000-0003-4423-4370",
     "description": "Related to sequences",
     "xrefs": [
-      {"prefix": "obo", "identifier": "so#has_origin"}
+      {
+        "prefix": "obo",
+        "identifier": "so#has_origin"
+      }
+    ]
+  },
+  {
+    "identifier": "0000027",
+    "name": "is substituent group from",
+    "creator": "0000-0003-4423-4370",
+    "description": "connects a group to its chemical entity (e.g., carboyxylic acid group to acetate)",
+    "xrefs": [
+      {
+        "prefix": "obo",
+        "identifier": "chebi#is_substituent_group_from"
+      }
     ]
   }
 ]

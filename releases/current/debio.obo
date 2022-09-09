@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 09:09:2022 11:55
+date: 09:09:2022 15:49
 auto-generated-by: bio2obo:debio
-data-version: 0.1.0-dev
+data-version: 0.1.1-dev
 idspace: RO http://purl.obolibrary.org/obo/RO_
 idspace: debio https://biopragmatics.github.io/debio/
 idspace: obo http://purl.obolibrary.org/obo/
@@ -156,3 +156,9 @@ name: IUPAC Name
 is_metadata_tag: true
 xref: obo:chebi#IUPAC_NAME
 xref: obo:fbbt#IUPAC_NAME
+
+[Typedef]
+id: debio:0000027
+name: is substituent group from
+def: "connects a group to its chemical entity (e.g., carboyxylic acid group to acetate)"
+xref: obo:chebi#is_substituent_group_from
