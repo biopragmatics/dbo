@@ -36,20 +36,21 @@
     <a href="https://github.com/biopragmatics/debio/blob/main/.github/CODE_OF_CONDUCT.md">
         <img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" alt="Contributor Covenant"/>
     </a>
+    <a href="https://zenodo.org/badge/latestdoi/505828431">
+        <img src="https://zenodo.org/badge/505828431.svg" alt="DOI">
+    </a>
 </p>
 
 A community-curated, decentralized biomedical ontology.
 
 ## 🚀 Installation
 
-<!-- Uncomment this section after your first ``tox -e finish``
 The most recent release can be installed from
 [PyPI](https://pypi.org/project/debio/) with:
 
 ```bash
 $ pip install debio
 ```
--->
 
 The most recent code and data can be installed directly from GitHub with:
 
