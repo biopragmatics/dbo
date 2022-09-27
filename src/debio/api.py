@@ -27,6 +27,7 @@ IDSPACES = {
     PREFIX: URI_PREFIX,
     "RO": "http://purl.obolibrary.org/obo/RO_",
     "obo": "http://purl.obolibrary.org/obo/",
+    "orcid": "https://orcid.org/",
 }
 
 
@@ -59,8 +60,7 @@ def _get_typedef(typedef, is_metadata_tag: Optional[bool] = None) -> TypeDef:
             Reference(prefix=xref["prefix"], identifier=xref["identifier"], name=xref.get("name"))
             for xref in typedef.get("xrefs", [])
         ],
-        # TODO uncomment after next pyobo release
-        # created_by=f"orcid:{typedef['creator']}"
+        created_by=f"orcid:{typedef['creator']}",
     )
 
 
