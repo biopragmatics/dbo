@@ -164,5 +164,11 @@
         "identifier": "chebi#is_substituent_group_from"
       }
     ]
+  },
+  {
+    "identifier": "0000029",
+    "name": "has citation",
+    "creator": "0000-0003-4423-4370",
+    "description": "connects any entity to a document (e.g., with a pubmed, doi, pmc, or arxiv identifier)"
   }
 ]
