@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 27:09:2022 22:32
+date: 01:12:2022 17:17
 auto-generated-by: bio2obo:debio
-data-version: 0.1.1
+data-version: 0.1.2-dev
 idspace: RO http://purl.obolibrary.org/obo/RO_
 idspace: debio https://biopragmatics.github.io/debio/
 idspace: obo http://purl.obolibrary.org/obo/
@@ -203,4 +203,18 @@ xref: obo:fbbt#INN
 id: debio:0000029
 name: has citation
 def: "connects any entity to a document (e.g., with a pubmed, doi, pmc, or arxiv identifier)"
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000030
+name: has related symbol
+def: "This term is most applicable to terms appearing in mathematical equations (e.g., rate laws) and connects the base concept to a symbol that has been used to represent it in a synonym."
+is_metadata_tag: true
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000031
+name: has related LaTeX
+def: "This term is most applicable to terms appearing in mathematical equations (e.g., rate laws) and connects the base concept to a the latex representing the symbol that has been used to represent it in a synonym."
+is_metadata_tag: true
 created_by: orcid:0000-0003-4423-4370

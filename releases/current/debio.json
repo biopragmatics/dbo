@@ -427,6 +427,23 @@
       "type" : "PROPERTY",
       "lbl" : "is enantiomer of"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000031",
+      "meta" : {
+        "definition" : {
+          "val" : "This term is most applicable to terms appearing in mathematical equations (e.g., rate laws) and connects the base concept to a the latex representing the symbol that has been used to represent it in a synonym.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has related LaTeX"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/debio_0000010",
       "meta" : {
         "definition" : {
@@ -443,6 +460,23 @@
       },
       "type" : "PROPERTY",
       "lbl" : "is conjugate base of"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000030",
+      "meta" : {
+        "definition" : {
+          "val" : "This term is most applicable to terms appearing in mathematical equations (e.g., rate laws) and connects the base concept to a symbol that has been used to represent it in a synonym.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has related symbol"
     }, {
       "id" : "http://purl.obolibrary.org/obo/debio_0000019",
       "meta" : {
@@ -470,7 +504,7 @@
         "val" : "bio2obo:debio"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "27:09:2022 22:32"
+        "val" : "01:12:2022 17:17"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
@@ -478,7 +512,7 @@
         "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
         "val" : "Decentralized Biomedical Ontology"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/debio/0.1.1/debio.owl"
+      "version" : "http://purl.obolibrary.org/obo/debio/0.1.2-dev/debio.owl"
     },
     "equivalentNodesSets" : [ ],
     "logicalDefinitionAxioms" : [ ],

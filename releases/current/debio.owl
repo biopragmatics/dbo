@@ -9,9 +9,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/debio.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/debio/0.1.1/debio.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/debio/0.1.2-dev/debio.owl"/>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio2obo:debio</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27:09:2022 22:32</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">01:12:2022 17:17</oboInOwl:date>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decentralized Biomedical Ontology</rdfs:comment>
     </owl:Ontology>
@@ -182,6 +182,30 @@
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">debio:0000028</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International Nonproprietary Name</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000030 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000030">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This term is most applicable to terms appearing in mathematical equations (e.g., rate laws) and connects the base concept to a symbol that has been used to represent it in a synonym.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">debio:0000030</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has related symbol</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000031 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000031">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This term is most applicable to terms appearing in mathematical equations (e.g., rate laws) and connects the base concept to a the latex representing the symbol that has been used to represent it in a synonym.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">debio:0000031</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has related LaTeX</rdfs:label>
     </owl:AnnotationProperty>
     
 

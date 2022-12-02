@@ -47,7 +47,7 @@
             <p>A repository for the TSV-based, decentralized, community-curated curation of terms, properties, and relations that get turned into OBO, OWL, and OBO Graph JSON.</p>
             <dl>
                     <dt>Data Version</dt>
-                    <dd>0.1.1</dd>
+                    <dd>0.1.2-dev</dd>
                 <dt>Number of Terms</dt>
                 <dd>0</dd>
                 <dt>Bioregistry</dt>
@@ -65,9 +65,10 @@
                         <dt><span class="badge badge-info">Prefix</span> orcid</dt>
                         <dd>https://orcid.org/</dd>
             </dl>
-
         </div>
     </div>
+
+
         <div class="card" style="margin-top: 1em;">
             <h5 class="card-header">
                 Terms, Relations, and Properties
@@ -78,6 +79,7 @@
                     <th>Type</th>
                     <th>Local Identifier</th>
                     <th>Name</th>
+                    <th>Definition</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -87,6 +89,7 @@
                         </td>
                         <td align="right"><a href="0000001">0000001</a></td>
                         <td>gene product is a member of</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -94,6 +97,7 @@
                         </td>
                         <td align="right"><a href="0000002">0000002</a></td>
                         <td>has mature miRNA</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -101,6 +105,7 @@
                         </td>
                         <td align="right"><a href="0000003">0000003</a></td>
                         <td>species specific</td>
+                        <td>X speciesSpecific Y means that Y is a general phenomena, like a pathway, and X is the version that appears in a species. X should state which species with RO:0002162 (in taxon)</td>
                     </tr>
                     <tr>
                         <td>
@@ -108,6 +113,7 @@
                         </td>
                         <td align="right"><a href="0000004">0000004</a></td>
                         <td>Antibody has target</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -115,6 +121,7 @@
                         </td>
                         <td align="right"><a href="0000005">0000005</a></td>
                         <td>locus group</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -122,6 +129,7 @@
                         </td>
                         <td align="right"><a href="0000006">0000006</a></td>
                         <td>has salt</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -129,6 +137,7 @@
                         </td>
                         <td align="right"><a href="0000007">0000007</a></td>
                         <td>has left-to-right reaction</td>
+                        <td>X ltr Y means reaction X of undetermined direction has a left-to-right reaction Y. Relevant for Rhea.</td>
                     </tr>
                     <tr>
                         <td>
@@ -136,6 +145,7 @@
                         </td>
                         <td align="right"><a href="0000008">0000008</a></td>
                         <td>has right-to-left reaction</td>
+                        <td>X rtl Y means reaction X of undetermined direction has a right-to-left reaction Y. Relevant for Rhea.</td>
                     </tr>
                     <tr>
                         <td>
@@ -143,6 +153,7 @@
                         </td>
                         <td align="right"><a href="0000009">0000009</a></td>
                         <td>has bi-directional reaction</td>
+                        <td>X bi Y means reaction X of undetermined direction has a bidirectional reaction Y. Relevant for Rhea.</td>
                     </tr>
                     <tr>
                         <td>
@@ -150,6 +161,7 @@
                         </td>
                         <td align="right"><a href="0000010">0000010</a></td>
                         <td>is conjugate base of</td>
+                        <td>X is conjugate base of Y typically means that X is a deprotonated form of Y</td>
                     </tr>
                     <tr>
                         <td>
@@ -157,6 +169,7 @@
                         </td>
                         <td align="right"><a href="0000011">0000011</a></td>
                         <td>is conjugate acid of</td>
+                        <td>X is conjugate acid of Y typically means that Y is a protonated form of X</td>
                     </tr>
                     <tr>
                         <td>
@@ -164,6 +177,7 @@
                         </td>
                         <td align="right"><a href="0000012">0000012</a></td>
                         <td>is enantiomer of</td>
+                        <td>X and Y are in an enantiomeric relationship if flipping all stereocenters of X results in Y</td>
                     </tr>
                     <tr>
                         <td>
@@ -171,6 +185,7 @@
                         </td>
                         <td align="right"><a href="0000013">0000013</a></td>
                         <td>is tautomer of</td>
+                        <td>X and Y are tautomers if they are different realizations of the resonance structure of the same molecule</td>
                     </tr>
                     <tr>
                         <td>
@@ -178,6 +193,7 @@
                         </td>
                         <td align="right"><a href="0000014">0000014</a></td>
                         <td>has parent hydride</td>
+                        <td>X has parent hydride Y if the substituents on X are replaced with hydrogens. E.g., SbCl3 has parent hydride SbH3</td>
                     </tr>
                     <tr>
                         <td>
@@ -185,6 +201,7 @@
                         </td>
                         <td align="right"><a href="0000015">0000015</a></td>
                         <td>has functional parent</td>
+                        <td>X has functional parent Y if X is a derivative (e.g., a salt) of Y. E.g., bepridil hydrochloride has functional parent bepridil</td>
                     </tr>
                     <tr>
                         <td>
@@ -192,6 +209,7 @@
                         </td>
                         <td align="right"><a href="0000016">0000016</a></td>
                         <td>monoisotopic mass</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -199,6 +217,7 @@
                         </td>
                         <td align="right"><a href="0000017">0000017</a></td>
                         <td>charge</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -206,6 +225,7 @@
                         </td>
                         <td align="right"><a href="0000018">0000018</a></td>
                         <td>formula</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -213,6 +233,7 @@
                         </td>
                         <td align="right"><a href="0000019">0000019</a></td>
                         <td>mass</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -220,6 +241,7 @@
                         </td>
                         <td align="right"><a href="0000020">0000020</a></td>
                         <td>InChI</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -227,6 +249,7 @@
                         </td>
                         <td align="right"><a href="0000021">0000021</a></td>
                         <td>InChI Key</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -234,6 +257,7 @@
                         </td>
                         <td align="right"><a href="0000022">0000022</a></td>
                         <td>smiles</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -241,6 +265,7 @@
                         </td>
                         <td align="right"><a href="0000023">0000023</a></td>
                         <td>has taxonomy rank</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -248,6 +273,7 @@
                         </td>
                         <td align="right"><a href="0000024">0000024</a></td>
                         <td>has species group</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -255,6 +281,7 @@
                         </td>
                         <td align="right"><a href="0000025">0000025</a></td>
                         <td>has origin</td>
+                        <td>Related to sequences</td>
                     </tr>
                     <tr>
                         <td>
@@ -262,6 +289,7 @@
                         </td>
                         <td align="right"><a href="0000026">0000026</a></td>
                         <td>IUPAC Name</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -269,6 +297,7 @@
                         </td>
                         <td align="right"><a href="0000027">0000027</a></td>
                         <td>is substituent group from</td>
+                        <td>connects a group to its chemical entity (e.g., carboyxylic acid group to acetate)</td>
                     </tr>
                     <tr>
                         <td>
@@ -276,6 +305,7 @@
                         </td>
                         <td align="right"><a href="0000028">0000028</a></td>
                         <td>International Nonproprietary Name</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -283,6 +313,23 @@
                         </td>
                         <td align="right"><a href="0000029">0000029</a></td>
                         <td>has citation</td>
+                        <td>connects any entity to a document (e.g., with a pubmed, doi, pmc, or arxiv identifier)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Property
+                        </td>
+                        <td align="right"><a href="0000030">0000030</a></td>
+                        <td>has related symbol</td>
+                        <td>This term is most applicable to terms appearing in mathematical equations (e.g., rate laws) and connects the base concept to a symbol that has been used to represent it in a synonym.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Property
+                        </td>
+                        <td align="right"><a href="0000031">0000031</a></td>
+                        <td>has related LaTeX</td>
+                        <td>This term is most applicable to terms appearing in mathematical equations (e.g., rate laws) and connects the base concept to a the latex representing the symbol that has been used to represent it in a synonym.</td>
                     </tr>
                 </tbody>
             </table>

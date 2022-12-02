@@ -39,6 +39,17 @@ def get_typedefs() -> Iterable[TypeDef]:
         yield _get_typedef(prop, is_metadata_tag=True)
 
 
+def _reference_list(references) -> List[Reference]:
+    return [
+        Reference(
+            prefix=reference["prefix"],
+            identifier=reference["identifier"],
+            name=reference.get("name"),
+        )
+        for reference in references
+    ]
+
+
 def _get_typedef(typedef, is_metadata_tag: Optional[bool] = None) -> TypeDef:
     return TypeDef(
         reference=Reference(
@@ -47,20 +58,11 @@ def _get_typedef(typedef, is_metadata_tag: Optional[bool] = None) -> TypeDef:
             name=typedef["name"],
         ),
         definition=typedef.get("description"),
-        holds_over_chain=[
-            Reference(
-                prefix=reference["prefix"],
-                identifier=reference["identifier"],
-                name=reference["name"],
-            )
-            for reference in typedef.get("holds_over_chain", [])
-        ],
+        holds_over_chain=_reference_list(typedef.get("holds_over_chain", [])),
         is_metadata_tag=is_metadata_tag,
-        xrefs=[
-            Reference(prefix=xref["prefix"], identifier=xref["identifier"], name=xref.get("name"))
-            for xref in typedef.get("xrefs", [])
-        ],
+        xrefs=_reference_list(typedef.get("xrefs", [])),
         created_by=f"orcid:{typedef['creator']}",
+        parents=_reference_list(typedef.get("parents", [])),
     )
 
 
