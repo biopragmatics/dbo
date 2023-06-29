@@ -170,5 +170,23 @@
     "name": "has citation",
     "creator": "0000-0003-4423-4370",
     "description": "connects any entity to a document (e.g., with a pubmed, doi, pmc, or arxiv identifier)"
+  },
+  {
+    "identifier": "0000032",
+    "name": "causes side effect",
+    "creator": "0000-0003-4423-4370",
+    "description": "connects any entity a side effect that it causes. For example, VO:0000112 (Tripedia) induces the side effect  HP:0002013 (Vomiting)"
+  },
+  {
+    "identifier": "0000033",
+    "name": "pathogen has host",
+    "creator": "0000-0003-4423-4370",
+    "description": "connects a pathogen (NCBITaxon) to a host (NCBITaxon)"
+  },
+  {
+    "identifier": "0000034",
+    "name": "vaccine has gene engineering",
+    "creator": "0000-0003-4423-4370",
+    "description": "connects a vaccine (VO) to a gene that has been engineered"
   }
 ]
