@@ -64,6 +64,10 @@
       {
         "prefix": "obo",
         "identifier": "fbbt#InChI"
+      },
+      {
+        "prefix": "wikidata",
+        "identifier": "P234"
       }
     ]
   },
@@ -79,6 +83,10 @@
       {
         "prefix": "obo",
         "identifier": "fbbt#InChIKey"
+      },
+      {
+        "prefix": "wikidata",
+        "identifier": "P235"
       }
     ]
   },
