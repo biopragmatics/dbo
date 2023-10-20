@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/debio.owl#"
      xml:base="http://purl.obolibrary.org/obo/debio.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -10,10 +11,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/debio.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/debio/0.1.2-dev/debio.owl"/>
+        <dc:title>Decentralized Biomedical Ontology</dc:title>
         <oboInOwl:auto-generated-by>bio2obo:debio</oboInOwl:auto-generated-by>
-        <oboInOwl:date>29:06:2023 10:23</oboInOwl:date>
+        <oboInOwl:date>20:10:2023 11:51</oboInOwl:date>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
-        <rdfs:comment>Decentralized Biomedical Ontology</rdfs:comment>
     </owl:Ontology>
     
 
@@ -209,6 +210,12 @@
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <rdfs:label>has related LaTeX</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
@@ -499,6 +506,28 @@
         <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
         <oboInOwl:id>debio:0000034</oboInOwl:id>
         <rdfs:label>vaccine has gene engineering</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000035 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000035">
+        <obo:IAO_0000115>connects a clinical trial to an intervention it investigates</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000035</oboInOwl:id>
+        <rdfs:label>has intervention</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000036 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000036">
+        <obo:IAO_0000115>connects a clinical trial to a condition it investigates</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000036</oboInOwl:id>
+        <rdfs:label>has condition</rdfs:label>
     </owl:ObjectProperty>
     
 

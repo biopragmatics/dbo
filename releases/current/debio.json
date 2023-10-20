@@ -3,17 +3,17 @@
     "id" : "http://purl.obolibrary.org/obo/debio.owl",
     "meta" : {
       "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/elements/1.1/title",
+        "val" : "Decentralized Biomedical Ontology"
+      }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#auto-generated-by",
         "val" : "bio2obo:debio"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "29:06:2023 10:23"
+        "val" : "20:10:2023 11:51"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
-      }, {
-        "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-        "val" : "Decentralized Biomedical Ontology"
       } ],
       "version" : "http://purl.obolibrary.org/obo/debio/0.1.2-dev/debio.owl"
     },
@@ -524,6 +524,32 @@
       "meta" : {
         "definition" : {
           "val" : "connects a vaccine (VO) to a gene that has been engineered"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000035",
+      "lbl" : "has intervention",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "connects a clinical trial to an intervention it investigates"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000036",
+      "lbl" : "has condition",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "connects a clinical trial to a condition it investigates"
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",

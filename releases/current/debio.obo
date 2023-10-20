@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:06:2023 10:23
+date: 20:10:2023 11:51
 auto-generated-by: bio2obo:debio
 data-version: 0.1.2-dev
 idspace: RO http://purl.obolibrary.org/obo/RO_
@@ -7,7 +7,7 @@ idspace: debio https://biopragmatics.github.io/debio/
 idspace: obo http://purl.obolibrary.org/obo/
 idspace: orcid https://orcid.org/
 ontology: debio
-remark: Decentralized Biomedical Ontology
+property_value: http://purl.org/dc/elements/1.1/title "Decentralized Biomedical Ontology" xsd:string
 
 [Typedef]
 id: debio:0000001
@@ -237,4 +237,16 @@ created_by: orcid:0000-0003-4423-4370
 id: debio:0000034
 name: vaccine has gene engineering
 def: "connects a vaccine (VO) to a gene that has been engineered"
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000035
+name: has intervention
+def: "connects a clinical trial to an intervention it investigates"
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000036
+name: has condition
+def: "connects a clinical trial to a condition it investigates"
 created_by: orcid:0000-0003-4423-4370

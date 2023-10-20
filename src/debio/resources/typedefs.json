@@ -188,5 +188,17 @@
     "name": "vaccine has gene engineering",
     "creator": "0000-0003-4423-4370",
     "description": "connects a vaccine (VO) to a gene that has been engineered"
+  },
+  {
+    "identifier": "0000035",
+    "name": "has intervention",
+    "creator": "0000-0003-4423-4370",
+    "description": "connects a clinical trial to an intervention it investigates"
+  },
+  {
+    "identifier": "0000036",
+    "name": "has condition",
+    "creator": "0000-0003-4423-4370",
+    "description": "connects a clinical trial to a condition it investigates"
   }
 ]
