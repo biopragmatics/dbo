@@ -200,5 +200,29 @@
     "name": "has condition",
     "creator": "0000-0003-4423-4370",
     "description": "connects a clinical trial to a condition it investigates"
+  },
+  {
+    "identifier": "0000037",
+    "name": "has platform",
+    "creator": "0000-0003-4423-4370",
+    "description": "connects a vaccine to its platform"
+  },
+  {
+    "identifier": "0000038",
+    "name": "mentioned in",
+    "creator": "0000-0003-4423-4370",
+    "description": "connects any entity to an article in which it's mentioned, e.g., extracted from NER"
+  },
+  {
+    "identifier": "0000039",
+    "name": "annotated with",
+    "creator": "0000-0003-4423-4370",
+    "description": "connects an article to a term it was annotated with (i.e. pubmed annotated with MeSH term)"
+  },
+  {
+    "identifier": "0000040",
+    "name": "related trial",
+    "creator": "0000-0003-4423-4370",
+    "description": "connects a related trial registered in a different registry"
   }
 ]

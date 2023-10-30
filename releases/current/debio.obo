@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:10:2023 11:51
+date: 30:10:2023 16:36
 auto-generated-by: bio2obo:debio
 data-version: 0.1.2-dev
 idspace: RO http://purl.obolibrary.org/obo/RO_
@@ -249,4 +249,28 @@ created_by: orcid:0000-0003-4423-4370
 id: debio:0000036
 name: has condition
 def: "connects a clinical trial to a condition it investigates"
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000037
+name: has platform
+def: "connects a vaccine to its platform"
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000038
+name: mentioned in
+def: "connects any entity to an article in which it's mentioned, e.g., extracted from NER"
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000039
+name: annotated with
+def: "connects an article to a term it was annotated with (i.e. pubmed annotated with MeSH term)"
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000040
+name: related trial
+def: "connects a related trial registered in a different registry"
 created_by: orcid:0000-0003-4423-4370

@@ -10,7 +10,7 @@
         "val" : "bio2obo:debio"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "20:10:2023 11:51"
+        "val" : "30:10:2023 16:36"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
@@ -550,6 +550,58 @@
       "meta" : {
         "definition" : {
           "val" : "connects a clinical trial to a condition it investigates"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000037",
+      "lbl" : "has platform",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "connects a vaccine to its platform"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000038",
+      "lbl" : "mentioned in",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "connects any entity to an article in which it's mentioned, e.g., extracted from NER"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000039",
+      "lbl" : "annotated with",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "connects an article to a term it was annotated with (i.e. pubmed annotated with MeSH term)"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000040",
+      "lbl" : "related trial",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "connects a related trial registered in a different registry"
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",

@@ -13,7 +13,7 @@
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/debio/0.1.2-dev/debio.owl"/>
         <dc:title>Decentralized Biomedical Ontology</dc:title>
         <oboInOwl:auto-generated-by>bio2obo:debio</oboInOwl:auto-generated-by>
-        <oboInOwl:date>20:10:2023 11:51</oboInOwl:date>
+        <oboInOwl:date>30:10:2023 16:36</oboInOwl:date>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
     </owl:Ontology>
     
@@ -528,6 +528,50 @@
         <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
         <oboInOwl:id>debio:0000036</oboInOwl:id>
         <rdfs:label>has condition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000037 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000037">
+        <obo:IAO_0000115>connects a vaccine to its platform</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000037</oboInOwl:id>
+        <rdfs:label>has platform</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000038 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000038">
+        <obo:IAO_0000115>connects any entity to an article in which it&apos;s mentioned, e.g., extracted from NER</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000038</oboInOwl:id>
+        <rdfs:label>mentioned in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000039 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000039">
+        <obo:IAO_0000115>connects an article to a term it was annotated with (i.e. pubmed annotated with MeSH term)</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000039</oboInOwl:id>
+        <rdfs:label>annotated with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000040 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000040">
+        <obo:IAO_0000115>connects a related trial registered in a different registry</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000040</oboInOwl:id>
+        <rdfs:label>related trial</rdfs:label>
     </owl:ObjectProperty>
     
 
