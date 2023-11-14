@@ -13,7 +13,7 @@
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/debio/0.1.2-dev/debio.owl"/>
         <dc:title>Decentralized Biomedical Ontology</dc:title>
         <oboInOwl:auto-generated-by>bio2obo:debio</oboInOwl:auto-generated-by>
-        <oboInOwl:date>30:10:2023 16:36</oboInOwl:date>
+        <oboInOwl:date>14:11:2023 17:31</oboInOwl:date>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
     </owl:Ontology>
     
@@ -502,7 +502,7 @@
     <!-- http://purl.obolibrary.org/obo/debio_0000034 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000034">
-        <obo:IAO_0000115>connects a vaccine (VO) to a gene that has been engineered</obo:IAO_0000115>
+        <obo:IAO_0000115>connects a vaccine (VO) to a gene that has been engineered. Most applicable to OMVs, Nanosponges, and nanolipoparticles (NLP).</obo:IAO_0000115>
         <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
         <oboInOwl:id>debio:0000034</oboInOwl:id>
         <rdfs:label>vaccine has gene engineering</rdfs:label>
@@ -572,6 +572,17 @@
         <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
         <oboInOwl:id>debio:0000040</oboInOwl:id>
         <rdfs:label>related trial</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000041 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000041">
+        <obo:IAO_0000115>Sibling relationship to vo:0001011 (immunizes against disease)</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000041</oboInOwl:id>
+        <rdfs:label>prevents infection</rdfs:label>
     </owl:ObjectProperty>
     
 

@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:10:2023 16:36
+date: 14:11:2023 17:31
 auto-generated-by: bio2obo:debio
 data-version: 0.1.2-dev
 idspace: RO http://purl.obolibrary.org/obo/RO_
@@ -236,7 +236,7 @@ created_by: orcid:0000-0003-4423-4370
 [Typedef]
 id: debio:0000034
 name: vaccine has gene engineering
-def: "connects a vaccine (VO) to a gene that has been engineered"
+def: "connects a vaccine (VO) to a gene that has been engineered. Most applicable to OMVs, Nanosponges, and nanolipoparticles (NLP)."
 created_by: orcid:0000-0003-4423-4370
 
 [Typedef]
@@ -273,4 +273,10 @@ created_by: orcid:0000-0003-4423-4370
 id: debio:0000040
 name: related trial
 def: "connects a related trial registered in a different registry"
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000041
+name: prevents infection
+def: "Sibling relationship to vo:0001011 (immunizes against disease)"
 created_by: orcid:0000-0003-4423-4370

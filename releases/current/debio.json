@@ -10,7 +10,7 @@
         "val" : "bio2obo:debio"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "30:10:2023 16:36"
+        "val" : "14:11:2023 17:31"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
@@ -523,7 +523,7 @@
       "type" : "PROPERTY",
       "meta" : {
         "definition" : {
-          "val" : "connects a vaccine (VO) to a gene that has been engineered"
+          "val" : "connects a vaccine (VO) to a gene that has been engineered. Most applicable to OMVs, Nanosponges, and nanolipoparticles (NLP)."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
@@ -602,6 +602,19 @@
       "meta" : {
         "definition" : {
           "val" : "connects a related trial registered in a different registry"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000041",
+      "lbl" : "prevents infection",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "Sibling relationship to vo:0001011 (immunizes against disease)"
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
