@@ -182,5 +182,17 @@
         "name": "has related synonym"
       }
     ]
+  },
+  {
+    "identifier": "0000042",
+    "name": "constant has value",
+    "description": "Connects an individual representing a physical constant to its numeric value",
+    "creator": "0000-0003-4423-4370"
+  },
+  {
+    "identifier": "0000043",
+    "name": "constant has formula",
+    "description": "Connects an individual representing a physical constant to its formula",
+    "creator": "0000-0003-4423-4370"
   }
 ]

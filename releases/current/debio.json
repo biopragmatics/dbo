@@ -3,6 +3,9 @@
     "id" : "http://purl.obolibrary.org/obo/debio.owl",
     "meta" : {
       "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/elements/1.1/description",
+        "val" : "A repository for the TSV-based, decentralized, community-curated curation of terms, properties, and relations that get turned into OBO, OWL, and OBO Graph JSON."
+      }, {
         "pred" : "http://purl.org/dc/elements/1.1/title",
         "val" : "Decentralized Biomedical Ontology"
       }, {
@@ -10,7 +13,7 @@
         "val" : "bio2obo:debio"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "14:11:2023 17:31"
+        "val" : "05:12:2023 19:15"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
@@ -622,6 +625,51 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000042",
+      "lbl" : "constant has value",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "Connects an individual representing a physical constant to its numeric value"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000043",
+      "lbl" : "constant has formula",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "Connects an individual representing a physical constant to its formula"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000044",
+      "lbl" : "pathogen defines vaccine class",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "A relationship where the domain is a taxon and the range is a vaccine family. E.g., Severe acute respiratory syndrome coronavirus 2 (ncbitaxon:2697049) is the pathogen that defines vaccine class COVID-19 vaccine (VO:0004908). Sort of an inverse of VO:0003355, but more specific"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
       "lbl" : "database_cross_reference",
       "type" : "PROPERTY"
@@ -632,7 +680,7 @@
     } ],
     "propertyChainAxioms" : [ {
       "predicateId" : "http://purl.obolibrary.org/obo/debio_0000001",
-      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/ro_0002205", "http://purl.obolibrary.org/obo/ro_0002350" ]
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002205", "http://purl.obolibrary.org/obo/RO_0002350" ]
     } ]
   } ]
 }

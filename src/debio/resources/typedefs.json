@@ -230,5 +230,11 @@
     "name": "prevents infection",
     "creator": "0000-0003-4423-4370",
     "description": "Sibling relationship to vo:0001011 (immunizes against disease)"
+  },
+  {
+    "identifier": "0000044",
+    "name": "pathogen defines vaccine class",
+    "creator": "0000-0003-4423-4370",
+    "description": "A relationship where the domain is a taxon and the range is a vaccine family. E.g., Severe acute respiratory syndrome coronavirus 2 (ncbitaxon:2697049) is the pathogen that defines vaccine class COVID-19 vaccine (VO:0004908). Sort of an inverse of VO:0003355, but more specific"
   }
 ]

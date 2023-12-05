@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:11:2023 17:31
+date: 05:12:2023 19:15
 auto-generated-by: bio2obo:debio
 data-version: 0.1.2-dev
 idspace: RO http://purl.obolibrary.org/obo/RO_
@@ -8,12 +8,13 @@ idspace: obo http://purl.obolibrary.org/obo/
 idspace: orcid https://orcid.org/
 ontology: debio
 property_value: http://purl.org/dc/elements/1.1/title "Decentralized Biomedical Ontology" xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "A repository for the TSV-based\, decentralized\, community-curated curation of terms\, properties\, and relations that get turned into OBO\, OWL\, and OBO Graph JSON." xsd:string
 
 [Typedef]
 id: debio:0000001
 name: gene product is a member of
 created_by: orcid:0000-0003-4423-4370
-holds_over_chain: ro:0002205 ro:0002350 ! has gene product / member of
+holds_over_chain: RO:0002205 RO:0002350 ! has gene product / member of
 
 [Typedef]
 id: debio:0000002
@@ -279,4 +280,24 @@ created_by: orcid:0000-0003-4423-4370
 id: debio:0000041
 name: prevents infection
 def: "Sibling relationship to vo:0001011 (immunizes against disease)"
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000042
+name: constant has value
+def: "Connects an individual representing a physical constant to its numeric value"
+is_metadata_tag: true
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000043
+name: constant has formula
+def: "Connects an individual representing a physical constant to its formula"
+is_metadata_tag: true
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000044
+name: pathogen defines vaccine class
+def: "A relationship where the domain is a taxon and the range is a vaccine family. E.g., Severe acute respiratory syndrome coronavirus 2 (ncbitaxon:2697049) is the pathogen that defines vaccine class COVID-19 vaccine (VO:0004908). Sort of an inverse of VO:0003355, but more specific"
 created_by: orcid:0000-0003-4423-4370
