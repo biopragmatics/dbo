@@ -2,8 +2,7 @@
 
 import click
 
-from debio import DecentralizedBiomedicalOntology
-from debio.api import DOCS, ROOT, write
+from debio.api import export
 
 __all__ = [
     "main",
@@ -15,19 +14,7 @@ def main():
     """Run the DeBiO CLI."""
 
 
-@main.command()
-def export():
-    """Export the data."""
-    from pyobo.ssg import make_site
-
-    ontology = DecentralizedBiomedicalOntology()
-    make_site(ontology, DOCS, manifest=True)
-
-    current = ROOT.joinpath("releases", "current")
-    write(ontology, current)
-    if not ontology.data_version.endswith("-dev"):
-        release = ROOT.joinpath("releases", ontology.data_version)
-        write(ontology, release)
+main.add_command(export)
 
 
 if __name__ == "__main__":

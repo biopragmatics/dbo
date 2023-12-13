@@ -6,6 +6,8 @@ import logging
 from pathlib import Path
 from typing import Iterable, List, Optional
 
+import click
+
 from pyobo import Obo, Reference, SynonymTypeDef, Term, TypeDef
 
 from debio.resources import PROPERTIES, TERMS, TYPEDEFS
@@ -63,6 +65,7 @@ def _get_typedef(typedef, is_metadata_tag: Optional[bool] = None) -> TypeDef:
         xrefs=_reference_list(typedef.get("xrefs", [])),
         created_by=f"orcid:{typedef['creator']}",
         parents=_reference_list(typedef.get("parents", [])),
+        inverse=Reference.from_curie(typedef["inverse"]) if "inverse" in typedef else None,
     )
 
 
@@ -118,3 +121,22 @@ def write(ontology: Obo, directory: Path) -> None:
                 f"'{PREFIX}: {URI_PREFIX}'",
             ],
         )
+
+
+@click.command()
+def export():
+    """Export the data."""
+    from pyobo.ssg import make_site
+
+    ontology = DecentralizedBiomedicalOntology()
+    make_site(ontology, DOCS, manifest=True)
+
+    current = ROOT.joinpath("releases", "current")
+    write(ontology, current)
+    if not ontology.data_version.endswith("-dev"):
+        release = ROOT.joinpath("releases", ontology.data_version)
+        write(ontology, release)
+
+
+if __name__ == "__main__":
+    export()

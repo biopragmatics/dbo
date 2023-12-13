@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:12:2023 19:15
+date: 13:12:2023 15:32
 auto-generated-by: bio2obo:debio
 data-version: 0.1.2-dev
 idspace: RO http://purl.obolibrary.org/obo/RO_
@@ -300,4 +300,10 @@ created_by: orcid:0000-0003-4423-4370
 id: debio:0000044
 name: pathogen defines vaccine class
 def: "A relationship where the domain is a taxon and the range is a vaccine family. E.g., Severe acute respiratory syndrome coronavirus 2 (ncbitaxon:2697049) is the pathogen that defines vaccine class COVID-19 vaccine (VO:0004908). Sort of an inverse of VO:0003355, but more specific"
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000045
+name: vector vaccine uses pathogen as vector
+def: "connects a vaccine platform that is a vector vaccine to a pathogen that it uses as a vector"
 created_by: orcid:0000-0003-4423-4370

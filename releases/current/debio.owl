@@ -11,9 +11,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/debio.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/debio/0.1.2-dev/debio.owl"/>
+        <dc:description>A repository for the TSV-based, decentralized, community-curated curation of terms, properties, and relations that get turned into OBO, OWL, and OBO Graph JSON.</dc:description>
         <dc:title>Decentralized Biomedical Ontology</dc:title>
         <oboInOwl:auto-generated-by>bio2obo:debio</oboInOwl:auto-generated-by>
-        <oboInOwl:date>14:11:2023 17:31</oboInOwl:date>
+        <oboInOwl:date>13:12:2023 15:32</oboInOwl:date>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
     </owl:Ontology>
     
@@ -213,6 +214,36 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/debio_0000042 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000042">
+        <obo:IAO_0000115>Connects an individual representing a physical constant to its numeric value</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000042</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <rdfs:label>constant has value</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000043 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000043">
+        <obo:IAO_0000115>Connects an individual representing a physical constant to its formula</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000043</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <rdfs:label>constant has formula</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
@@ -282,12 +313,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002205 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002205"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/debio_0000001 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000001">
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ro_0002205"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ro_0002350"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002205"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
         </owl:propertyChainAxiom>
         <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
         <oboInOwl:id>debio:0000001</oboInOwl:id>
@@ -587,15 +630,25 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ro_0002205 -->
+    <!-- http://purl.obolibrary.org/obo/debio_0000044 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ro_0002205"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000044">
+        <obo:IAO_0000115>A relationship where the domain is a taxon and the range is a vaccine family. E.g., Severe acute respiratory syndrome coronavirus 2 (ncbitaxon:2697049) is the pathogen that defines vaccine class COVID-19 vaccine (VO:0004908). Sort of an inverse of VO:0003355, but more specific</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000044</oboInOwl:id>
+        <rdfs:label>pathogen defines vaccine class</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ro_0002350 -->
+    <!-- http://purl.obolibrary.org/obo/debio_0000045 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ro_0002350"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000045">
+        <obo:IAO_0000115>connects a vaccine platform that is a vector vaccine to a pathogen that it uses as a vector</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000045</oboInOwl:id>
+        <rdfs:label>vector vaccine uses pathogen as vector</rdfs:label>
+    </owl:ObjectProperty>
 </rdf:RDF>
 
 
