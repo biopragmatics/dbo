@@ -14,7 +14,7 @@
         <dc:description>A repository for the TSV-based, decentralized, community-curated curation of terms, properties, and relations that get turned into OBO, OWL, and OBO Graph JSON.</dc:description>
         <dc:title>Decentralized Biomedical Ontology</dc:title>
         <oboInOwl:auto-generated-by>bio2obo:debio</oboInOwl:auto-generated-by>
-        <oboInOwl:date>13:12:2023 15:32</oboInOwl:date>
+        <oboInOwl:date>04:01:2024 15:37</oboInOwl:date>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
     </owl:Ontology>
     
@@ -313,6 +313,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000015 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000015">
+        <obo:IAO_0000115>X has functional parent Y if X is a derivative (e.g., a salt) of Y. E.g., bepridil hydrochloride has functional parent bepridil</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>RO:0000015</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>obo:chebi#has_functional_parent</oboInOwl:hasDbXref>
+        <oboInOwl:id>debio:0000015</oboInOwl:id>
+        <rdfs:label>has functional parent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002205 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002205"/>
@@ -322,6 +335,71 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0018033 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0018033">
+        <obo:IAO_0000115>X is conjugate base of Y typically means that X is a deprotonated form of Y</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>RO:0018033</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>obo:chebi#is_conjugate_base_of</oboInOwl:hasDbXref>
+        <oboInOwl:id>debio:0000010</oboInOwl:id>
+        <rdfs:label>is conjugate base of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0018034 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0018034">
+        <obo:IAO_0000115>X is conjugate acid of Y typically means that Y is a protonated form of X</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>RO:0018034</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>obo:chebi#is_conjugate_acid_of</oboInOwl:hasDbXref>
+        <oboInOwl:id>debio:0000011</oboInOwl:id>
+        <rdfs:label>is conjugate acid of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0018036 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0018036">
+        <obo:IAO_0000115>X and Y are tautomers if they are different realizations of the resonance structure of the same molecule</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>RO:0018036</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>obo:chebi#is_tautomer_of</oboInOwl:hasDbXref>
+        <oboInOwl:id>debio:0000013</oboInOwl:id>
+        <rdfs:label>is tautomer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0018039 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0018039">
+        <obo:IAO_0000115>X and Y are in an enantiomeric relationship if flipping all stereocenters of X results in Y</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>RO:0018039</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>obo:chebi#is_enantiomer_of</oboInOwl:hasDbXref>
+        <oboInOwl:id>debio:0000012</oboInOwl:id>
+        <rdfs:label>is enantiomer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0018040 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0018040">
+        <obo:IAO_0000115>X has parent hydride Y if the substituents on X are replaced with hydrogens. E.g., SbCl3 has parent hydride SbH3</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>RO:0018040</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>obo:chebi#has_parent_hydride</oboInOwl:hasDbXref>
+        <oboInOwl:id>debio:0000014</oboInOwl:id>
+        <rdfs:label>has parent hydride</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -409,78 +487,6 @@
         <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
         <oboInOwl:id>debio:0000009</oboInOwl:id>
         <rdfs:label>has bi-directional reaction</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/debio_0000010 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000010">
-        <obo:IAO_0000115>X is conjugate base of Y typically means that X is a deprotonated form of Y</obo:IAO_0000115>
-        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
-        <oboInOwl:hasDbXref>obo:chebi#is_conjugate_base_of</oboInOwl:hasDbXref>
-        <oboInOwl:id>debio:0000010</oboInOwl:id>
-        <rdfs:label>is conjugate base of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/debio_0000011 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000011">
-        <obo:IAO_0000115>X is conjugate acid of Y typically means that Y is a protonated form of X</obo:IAO_0000115>
-        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
-        <oboInOwl:hasDbXref>obo:chebi#is_conjugate_acid_of</oboInOwl:hasDbXref>
-        <oboInOwl:id>debio:0000011</oboInOwl:id>
-        <rdfs:label>is conjugate acid of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/debio_0000012 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000012">
-        <obo:IAO_0000115>X and Y are in an enantiomeric relationship if flipping all stereocenters of X results in Y</obo:IAO_0000115>
-        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
-        <oboInOwl:hasDbXref>obo:chebi#is_enantiomer_of</oboInOwl:hasDbXref>
-        <oboInOwl:id>debio:0000012</oboInOwl:id>
-        <rdfs:label>is enantiomer of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/debio_0000013 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000013">
-        <obo:IAO_0000115>X and Y are tautomers if they are different realizations of the resonance structure of the same molecule</obo:IAO_0000115>
-        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
-        <oboInOwl:hasDbXref>obo:chebi#is_tautomer_of</oboInOwl:hasDbXref>
-        <oboInOwl:id>debio:0000013</oboInOwl:id>
-        <rdfs:label>is tautomer of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/debio_0000014 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000014">
-        <obo:IAO_0000115>X has parent hydride Y if the substituents on X are replaced with hydrogens. E.g., SbCl3 has parent hydride SbH3</obo:IAO_0000115>
-        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
-        <oboInOwl:hasDbXref>obo:chebi#has_parent_hydride</oboInOwl:hasDbXref>
-        <oboInOwl:id>debio:0000014</oboInOwl:id>
-        <rdfs:label>has parent hydride</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/debio_0000015 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000015">
-        <obo:IAO_0000115>X has functional parent Y if X is a derivative (e.g., a salt) of Y. E.g., bepridil hydrochloride has functional parent bepridil</obo:IAO_0000115>
-        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
-        <oboInOwl:hasDbXref>obo:chebi#has_functional_parent</oboInOwl:hasDbXref>
-        <oboInOwl:id>debio:0000015</oboInOwl:id>
-        <rdfs:label>has functional parent</rdfs:label>
     </owl:ObjectProperty>
     
 

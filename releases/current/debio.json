@@ -13,7 +13,7 @@
         "val" : "bio2obo:debio"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "13:12:2023 15:32"
+        "val" : "04:01:2024 15:37"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
@@ -24,6 +24,114 @@
       "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
       "lbl" : "definition",
       "type" : "PROPERTY"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000015",
+      "lbl" : "has functional parent",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "X has functional parent Y if X is a derivative (e.g., a salt) of Y. E.g., bepridil hydrochloride has functional parent bepridil"
+        },
+        "xrefs" : [ {
+          "val" : "RO:0000015"
+        }, {
+          "val" : "obo:chebi#has_functional_parent"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0018033",
+      "lbl" : "is conjugate base of",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "X is conjugate base of Y typically means that X is a deprotonated form of Y"
+        },
+        "xrefs" : [ {
+          "val" : "RO:0018033"
+        }, {
+          "val" : "obo:chebi#is_conjugate_base_of"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0018034",
+      "lbl" : "is conjugate acid of",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "X is conjugate acid of Y typically means that Y is a protonated form of X"
+        },
+        "xrefs" : [ {
+          "val" : "RO:0018034"
+        }, {
+          "val" : "obo:chebi#is_conjugate_acid_of"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0018036",
+      "lbl" : "is tautomer of",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "X and Y are tautomers if they are different realizations of the resonance structure of the same molecule"
+        },
+        "xrefs" : [ {
+          "val" : "RO:0018036"
+        }, {
+          "val" : "obo:chebi#is_tautomer_of"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0018039",
+      "lbl" : "is enantiomer of",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "X and Y are in an enantiomeric relationship if flipping all stereocenters of X results in Y"
+        },
+        "xrefs" : [ {
+          "val" : "RO:0018039"
+        }, {
+          "val" : "obo:chebi#is_enantiomer_of"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0018040",
+      "lbl" : "has parent hydride",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "X has parent hydride Y if the substituents on X are replaced with hydrogens. E.g., SbCl3 has parent hydride SbH3"
+        },
+        "xrefs" : [ {
+          "val" : "RO:0018040"
+        }, {
+          "val" : "obo:chebi#has_parent_hydride"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/debio_0000001",
       "lbl" : "gene product is a member of",
@@ -124,102 +232,6 @@
         "definition" : {
           "val" : "X bi Y means reaction X of undetermined direction has a bidirectional reaction Y. Relevant for Rhea."
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "orcid:0000-0003-4423-4370"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/debio_0000010",
-      "lbl" : "is conjugate base of",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "X is conjugate base of Y typically means that X is a deprotonated form of Y"
-        },
-        "xrefs" : [ {
-          "val" : "obo:chebi#is_conjugate_base_of"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "orcid:0000-0003-4423-4370"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/debio_0000011",
-      "lbl" : "is conjugate acid of",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "X is conjugate acid of Y typically means that Y is a protonated form of X"
-        },
-        "xrefs" : [ {
-          "val" : "obo:chebi#is_conjugate_acid_of"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "orcid:0000-0003-4423-4370"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/debio_0000012",
-      "lbl" : "is enantiomer of",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "X and Y are in an enantiomeric relationship if flipping all stereocenters of X results in Y"
-        },
-        "xrefs" : [ {
-          "val" : "obo:chebi#is_enantiomer_of"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "orcid:0000-0003-4423-4370"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/debio_0000013",
-      "lbl" : "is tautomer of",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "X and Y are tautomers if they are different realizations of the resonance structure of the same molecule"
-        },
-        "xrefs" : [ {
-          "val" : "obo:chebi#is_tautomer_of"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "orcid:0000-0003-4423-4370"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/debio_0000014",
-      "lbl" : "has parent hydride",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "X has parent hydride Y if the substituents on X are replaced with hydrogens. E.g., SbCl3 has parent hydride SbH3"
-        },
-        "xrefs" : [ {
-          "val" : "obo:chebi#has_parent_hydride"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "orcid:0000-0003-4423-4370"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/debio_0000015",
-      "lbl" : "has functional parent",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "X has functional parent Y if X is a derivative (e.g., a salt) of Y. E.g., bepridil hydrochloride has functional parent bepridil"
-        },
-        "xrefs" : [ {
-          "val" : "obo:chebi#has_functional_parent"
-        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "orcid:0000-0003-4423-4370"

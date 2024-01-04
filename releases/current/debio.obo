@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:12:2023 15:32
+date: 04:01:2024 15:37
 auto-generated-by: bio2obo:debio
 data-version: 0.1.2-dev
 idspace: RO http://purl.obolibrary.org/obo/RO_
@@ -67,6 +67,7 @@ name: is conjugate base of
 def: "X is conjugate base of Y typically means that X is a deprotonated form of Y"
 created_by: orcid:0000-0003-4423-4370
 xref: obo:chebi#is_conjugate_base_of
+xref: RO:0018033
 
 [Typedef]
 id: debio:0000011
@@ -74,6 +75,7 @@ name: is conjugate acid of
 def: "X is conjugate acid of Y typically means that Y is a protonated form of X"
 created_by: orcid:0000-0003-4423-4370
 xref: obo:chebi#is_conjugate_acid_of
+xref: RO:0018034
 
 [Typedef]
 id: debio:0000012
@@ -81,6 +83,7 @@ name: is enantiomer of
 def: "X and Y are in an enantiomeric relationship if flipping all stereocenters of X results in Y"
 created_by: orcid:0000-0003-4423-4370
 xref: obo:chebi#is_enantiomer_of
+xref: RO:0018039
 
 [Typedef]
 id: debio:0000013
@@ -88,6 +91,7 @@ name: is tautomer of
 def: "X and Y are tautomers if they are different realizations of the resonance structure of the same molecule"
 created_by: orcid:0000-0003-4423-4370
 xref: obo:chebi#is_tautomer_of
+xref: RO:0018036
 
 [Typedef]
 id: debio:0000014
@@ -95,6 +99,7 @@ name: has parent hydride
 def: "X has parent hydride Y if the substituents on X are replaced with hydrogens. E.g., SbCl3 has parent hydride SbH3"
 created_by: orcid:0000-0003-4423-4370
 xref: obo:chebi#has_parent_hydride
+xref: RO:0018040
 
 [Typedef]
 id: debio:0000015
@@ -102,6 +107,7 @@ name: has functional parent
 def: "X has functional parent Y if X is a derivative (e.g., a salt) of Y. E.g., bepridil hydrochloride has functional parent bepridil"
 created_by: orcid:0000-0003-4423-4370
 xref: obo:chebi#has_functional_parent
+xref: RO:0000015
 
 [Typedef]
 id: debio:0000016

@@ -73,6 +73,10 @@
       {
         "prefix": "obo",
         "identifier": "chebi#is_conjugate_base_of"
+      },
+      {
+        "prefix": "ro",
+        "identifier": "0018033"
       }
     ]
   },
@@ -86,6 +90,10 @@
       {
         "prefix": "obo",
         "identifier": "chebi#is_conjugate_acid_of"
+      },
+      {
+        "prefix": "ro",
+        "identifier": "0018034"
       }
     ]
   },
@@ -99,6 +107,9 @@
       {
         "prefix": "obo",
         "identifier": "chebi#is_enantiomer_of"
+      },{
+        "prefix": "ro",
+        "identifier": "0018039"
       }
     ]
   },
@@ -112,6 +123,9 @@
       {
         "prefix": "obo",
         "identifier": "chebi#is_tautomer_of"
+      },{
+        "prefix": "ro",
+        "identifier": "0018036"
       }
     ]
   },
@@ -125,6 +139,9 @@
       {
         "prefix": "obo",
         "identifier": "chebi#has_parent_hydride"
+      },{
+        "prefix": "ro",
+        "identifier": "0018040"
       }
     ]
   },
@@ -138,6 +155,9 @@
       {
         "prefix": "obo",
         "identifier": "chebi#has_functional_parent"
+      },{
+        "prefix": "ro",
+        "identifier": "0000015"
       }
     ]
   },
