@@ -14,7 +14,7 @@
         <dc:description>A repository for the TSV-based, decentralized, community-curated curation of terms, properties, and relations that get turned into OBO, OWL, and OBO Graph JSON.</dc:description>
         <dc:title>Decentralized Biomedical Ontology</dc:title>
         <oboInOwl:auto-generated-by>bio2obo:debio</oboInOwl:auto-generated-by>
-        <oboInOwl:date>04:01:2024 15:37</oboInOwl:date>
+        <oboInOwl:date>10:01:2024 13:52</oboInOwl:date>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
     </owl:Ontology>
     
@@ -654,6 +654,17 @@
         <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
         <oboInOwl:id>debio:0000045</oboInOwl:id>
         <rdfs:label>vector vaccine uses pathogen as vector</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000046 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000046">
+        <obo:IAO_0000115>connects any entity to an article that a search over the entity label or its synonyms produces</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0001-9439-5346</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000046</oboInOwl:id>
+        <rdfs:label>search results in</rdfs:label>
     </owl:ObjectProperty>
 </rdf:RDF>
 

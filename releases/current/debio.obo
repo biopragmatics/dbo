@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 04:01:2024 15:37
+date: 10:01:2024 13:52
 auto-generated-by: bio2obo:debio
 data-version: 0.1.2-dev
 idspace: RO http://purl.obolibrary.org/obo/RO_
@@ -313,3 +313,9 @@ id: debio:0000045
 name: vector vaccine uses pathogen as vector
 def: "connects a vaccine platform that is a vector vaccine to a pathogen that it uses as a vector"
 created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000046
+name: search results in
+def: "connects any entity to an article that a search over the entity label or its synonyms produces"
+created_by: orcid:0000-0001-9439-5346
