@@ -52,6 +52,13 @@ def _reference_list(references) -> List[Reference]:
     ]
 
 
+def _reference(d, k) -> Optional[Reference]:
+    v = d.get(k)
+    if not v:
+        return None
+    return Reference.from_curie(v)
+
+
 def _get_typedef(typedef, is_metadata_tag: Optional[bool] = None) -> TypeDef:
     return TypeDef(
         reference=Reference(
@@ -65,7 +72,9 @@ def _get_typedef(typedef, is_metadata_tag: Optional[bool] = None) -> TypeDef:
         xrefs=_reference_list(typedef.get("xrefs", [])),
         created_by=f"orcid:{typedef['creator']}",
         parents=_reference_list(typedef.get("parents", [])),
-        inverse=Reference.from_curie(typedef["inverse"]) if "inverse" in typedef else None,
+        inverse=_reference(typedef, "inverse"),
+        domain=_reference(typedef, "domain"),
+        range=_reference(typedef, "range"),
     )
 
 

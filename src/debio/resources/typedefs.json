@@ -201,13 +201,17 @@
     "identifier": "0000033",
     "name": "pathogen has host",
     "creator": "0000-0003-4423-4370",
-    "description": "connects a pathogen (NCBITaxon) to a host (NCBITaxon)"
+    "description": "connects a pathogen (NCBITaxon) to a host (NCBITaxon)",
+    "domain": "NCBITaxon:1",
+    "range": "NCBITaxon:1"
+
   },
   {
     "identifier": "0000034",
     "name": "vaccine has gene engineering",
     "creator": "0000-0003-4423-4370",
-    "description": "connects a vaccine (VO) to a gene that has been engineered. Most applicable to OMVs, Nanosponges, and nanolipoparticles (NLP)."
+    "description": "connects a vaccine (VO) to a gene that has been engineered. Most applicable to OMVs, Nanosponges, and nanolipoparticles (NLP).",
+    "domain": "vo:0000001"
   },
   {
     "identifier": "0000035",
@@ -225,7 +229,8 @@
     "identifier": "0000037",
     "name": "has platform",
     "creator": "0000-0003-4423-4370",
-    "description": "connects a vaccine to its platform"
+    "description": "connects a vaccine to its platform",
+    "domain": "vo:0000001"
   },
   {
     "identifier": "0000038",
@@ -249,7 +254,9 @@
     "identifier": "0000041",
     "name": "prevents infection",
     "creator": "0000-0003-4423-4370",
-    "description": "Sibling relationship to vo:0001011 (immunizes against disease)"
+    "description": "Sibling relationship to vo:0001011 (immunizes against disease)",
+    "domain": "vo:0000001",
+    "range": "doid:4"
   },
   {
     "identifier": "0000044",
@@ -268,5 +275,12 @@
     "name": "search results in",
     "creator": "0000-0001-9439-5346",
     "description": "connects any entity to an article that a search over the entity label or its synonyms produces"
+  },
+  {
+    "identifier": "0000047",
+    "name": "reaction enabled by molecular function",
+    "creator": "0000-0001-9439-5346",
+    "description": "connects a reaction (e.g., from Rhea) to a molecular function (e.g., from GO) that corresponds",
+    "range": "GO:0003674"
   }
 ]

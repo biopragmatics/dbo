@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:01:2024 13:52
+date: 02:02:2024 08:42
 auto-generated-by: bio2obo:debio
 data-version: 0.1.2-dev
 idspace: RO http://purl.obolibrary.org/obo/RO_
@@ -239,12 +239,15 @@ id: debio:0000033
 name: pathogen has host
 def: "connects a pathogen (NCBITaxon) to a host (NCBITaxon)"
 created_by: orcid:0000-0003-4423-4370
+domain: NCBITaxon:1
+range: NCBITaxon:1
 
 [Typedef]
 id: debio:0000034
 name: vaccine has gene engineering
 def: "connects a vaccine (VO) to a gene that has been engineered. Most applicable to OMVs, Nanosponges, and nanolipoparticles (NLP)."
 created_by: orcid:0000-0003-4423-4370
+domain: VO:0000001
 
 [Typedef]
 id: debio:0000035
@@ -263,6 +266,7 @@ id: debio:0000037
 name: has platform
 def: "connects a vaccine to its platform"
 created_by: orcid:0000-0003-4423-4370
+domain: VO:0000001
 
 [Typedef]
 id: debio:0000038
@@ -287,6 +291,8 @@ id: debio:0000041
 name: prevents infection
 def: "Sibling relationship to vo:0001011 (immunizes against disease)"
 created_by: orcid:0000-0003-4423-4370
+domain: VO:0000001
+range: DOID:4
 
 [Typedef]
 id: debio:0000042
@@ -319,3 +325,10 @@ id: debio:0000046
 name: search results in
 def: "connects any entity to an article that a search over the entity label or its synonyms produces"
 created_by: orcid:0000-0001-9439-5346
+
+[Typedef]
+id: debio:0000047
+name: reaction enabled by molecular function
+def: "connects a reaction (e.g., from Rhea) to a molecular function (e.g., from GO) that corresponds"
+created_by: orcid:0000-0001-9439-5346
+range: GO:0003674

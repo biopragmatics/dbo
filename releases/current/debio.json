@@ -13,7 +13,7 @@
         "val" : "bio2obo:debio"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "10:01:2024 13:52"
+        "val" : "02:02:2024 08:42"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
@@ -708,6 +708,19 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000047",
+      "lbl" : "reaction enabled by molecular function",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "connects a reaction (e.g., from Rhea) to a molecular function (e.g., from GO) that corresponds"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0001-9439-5346"
+        } ]
+      }
+    }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
       "lbl" : "database_cross_reference",
       "type" : "PROPERTY"
@@ -715,6 +728,41 @@
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
       "lbl" : "has_obo_format_version",
       "type" : "PROPERTY"
+    } ],
+    "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/DOID_4",
+      "pred" : "is_a",
+      "obj" : "http://www.w3.org/2002/07/owl#Thing"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GO_0003674",
+      "pred" : "is_a",
+      "obj" : "http://www.w3.org/2002/07/owl#Thing"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_1",
+      "pred" : "is_a",
+      "obj" : "http://www.w3.org/2002/07/owl#Thing"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/VO_0000001",
+      "pred" : "is_a",
+      "obj" : "http://www.w3.org/2002/07/owl#Thing"
+    } ],
+    "domainRangeAxioms" : [ {
+      "predicateId" : "http://purl.obolibrary.org/obo/debio_0000033",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/NCBITaxon_1" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/NCBITaxon_1" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/debio_0000034",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/VO_0000001" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/debio_0000037",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/VO_0000001" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/debio_0000041",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/VO_0000001" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/DOID_4" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/debio_0000047",
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/GO_0003674" ]
     } ],
     "propertyChainAxioms" : [ {
       "predicateId" : "http://purl.obolibrary.org/obo/debio_0000001",
