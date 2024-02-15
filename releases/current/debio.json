@@ -13,7 +13,7 @@
         "val" : "bio2obo:debio"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "02:02:2024 08:42"
+        "val" : "15:02:2024 17:43"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
@@ -717,7 +717,46 @@
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "orcid:0000-0001-9439-5346"
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000048",
+      "lbl" : "trial occurred in country",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "connects a trial (e.g., from ClinicalTrials.gov) to a country (e.g., from GeoNames) based on where the trial took place"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000049",
+      "lbl" : "has active license from",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "connects a vaccine (e.g., from VO) to a country or organization where it has an active license through standard approval"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/debio_0000050",
+      "lbl" : "has active EUA license from",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "connects a vaccine (e.g., from VO) to a country or organization where it has an active license through emergency use authorization (EUA)"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "orcid:0000-0003-4423-4370"
         } ]
       }
     }, {

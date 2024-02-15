@@ -14,7 +14,7 @@
         <dc:description>A repository for the TSV-based, decentralized, community-curated curation of terms, properties, and relations that get turned into OBO, OWL, and OBO Graph JSON.</dc:description>
         <dc:title>Decentralized Biomedical Ontology</dc:title>
         <oboInOwl:auto-generated-by>bio2obo:debio</oboInOwl:auto-generated-by>
-        <oboInOwl:date>02:02:2024 08:42</oboInOwl:date>
+        <oboInOwl:date>15:02:2024 17:43</oboInOwl:date>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
     </owl:Ontology>
     
@@ -680,9 +680,42 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000047">
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/GO_0003674"/>
         <obo:IAO_0000115>connects a reaction (e.g., from Rhea) to a molecular function (e.g., from GO) that corresponds</obo:IAO_0000115>
-        <oboInOwl:created_by>orcid:0000-0001-9439-5346</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
         <oboInOwl:id>debio:0000047</oboInOwl:id>
         <rdfs:label>reaction enabled by molecular function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000048 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000048">
+        <obo:IAO_0000115>connects a trial (e.g., from ClinicalTrials.gov) to a country (e.g., from GeoNames) based on where the trial took place</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000048</oboInOwl:id>
+        <rdfs:label>trial occurred in country</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000049 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000049">
+        <obo:IAO_0000115>connects a vaccine (e.g., from VO) to a country or organization where it has an active license through standard approval</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000049</oboInOwl:id>
+        <rdfs:label>has active license from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/debio_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/debio_0000050">
+        <obo:IAO_0000115>connects a vaccine (e.g., from VO) to a country or organization where it has an active license through emergency use authorization (EUA)</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:id>debio:0000050</oboInOwl:id>
+        <rdfs:label>has active EUA license from</rdfs:label>
     </owl:ObjectProperty>
     
 

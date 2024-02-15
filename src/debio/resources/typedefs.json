@@ -107,7 +107,8 @@
       {
         "prefix": "obo",
         "identifier": "chebi#is_enantiomer_of"
-      },{
+      },
+      {
         "prefix": "ro",
         "identifier": "0018039"
       }
@@ -123,7 +124,8 @@
       {
         "prefix": "obo",
         "identifier": "chebi#is_tautomer_of"
-      },{
+      },
+      {
         "prefix": "ro",
         "identifier": "0018036"
       }
@@ -139,7 +141,8 @@
       {
         "prefix": "obo",
         "identifier": "chebi#has_parent_hydride"
-      },{
+      },
+      {
         "prefix": "ro",
         "identifier": "0018040"
       }
@@ -155,7 +158,8 @@
       {
         "prefix": "obo",
         "identifier": "chebi#has_functional_parent"
-      },{
+      },
+      {
         "prefix": "ro",
         "identifier": "0000015"
       }
@@ -204,7 +208,6 @@
     "description": "connects a pathogen (NCBITaxon) to a host (NCBITaxon)",
     "domain": "NCBITaxon:1",
     "range": "NCBITaxon:1"
-
   },
   {
     "identifier": "0000034",
@@ -279,8 +282,26 @@
   {
     "identifier": "0000047",
     "name": "reaction enabled by molecular function",
-    "creator": "0000-0001-9439-5346",
+    "creator": "0000-0003-4423-4370",
     "description": "connects a reaction (e.g., from Rhea) to a molecular function (e.g., from GO) that corresponds",
     "range": "GO:0003674"
+  },
+  {
+    "identifier": "0000048",
+    "name": "trial occurred in country",
+    "creator": "0000-0003-4423-4370",
+    "description": "connects a trial (e.g., from ClinicalTrials.gov) to a country (e.g., from GeoNames) based on where the trial took place"
+  },
+  {
+    "identifier": "0000049",
+    "name": "has active license from",
+    "creator": "0000-0003-4423-4370",
+    "description": "connects a vaccine (e.g., from VO) to a country or organization where it has an active license through standard approval"
+  },
+  {
+    "identifier": "0000050",
+    "name": "has active EUA license from",
+    "creator": "0000-0003-4423-4370",
+    "description": "connects a vaccine (e.g., from VO) to a country or organization where it has an active license through emergency use authorization (EUA)"
   }
 ]

@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:02:2024 08:42
+date: 15:02:2024 17:43
 auto-generated-by: bio2obo:debio
 data-version: 0.1.2-dev
 idspace: RO http://purl.obolibrary.org/obo/RO_
@@ -330,5 +330,23 @@ created_by: orcid:0000-0001-9439-5346
 id: debio:0000047
 name: reaction enabled by molecular function
 def: "connects a reaction (e.g., from Rhea) to a molecular function (e.g., from GO) that corresponds"
-created_by: orcid:0000-0001-9439-5346
+created_by: orcid:0000-0003-4423-4370
 range: GO:0003674
+
+[Typedef]
+id: debio:0000048
+name: trial occurred in country
+def: "connects a trial (e.g., from ClinicalTrials.gov) to a country (e.g., from GeoNames) based on where the trial took place"
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000049
+name: has active license from
+def: "connects a vaccine (e.g., from VO) to a country or organization where it has an active license through standard approval"
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: debio:0000050
+name: has active EUA license from
+def: "connects a vaccine (e.g., from VO) to a country or organization where it has an active license through emergency use authorization (EUA)"
+created_by: orcid:0000-0003-4423-4370
