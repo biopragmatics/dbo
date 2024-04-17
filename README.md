@@ -43,6 +43,16 @@
 
 A community-curated, decentralized biomedical ontology.
 
+## 👐 Contributing
+
+Contributions, whether filing an issue, making a pull request, or forking, are appreciated. See
+[CONTRIBUTING.md](https://github.com/biopragmatics/debio/blob/master/.github/CONTRIBUTING.md) for more information on
+getting involved. This document also includes:
+
+1. Curation guidelines for new object properties
+2. Instructions for rebuilding the ontology
+3. Instructions for releasing the ontology to PyPI
+
 ## 🚀 Installation
 
 The most recent release can be installed from
@@ -57,11 +67,6 @@ The most recent code and data can be installed directly from GitHub with:
 ```bash
 $ pip install git+https://github.com/biopragmatics/debio.git
 ```
-
-## 👐 Contributing
-
-Contributions, whether filing an issue, making a pull request, or forking, are appreciated. See
-[CONTRIBUTING.md](https://github.com/biopragmatics/debio/blob/master/.github/CONTRIBUTING.md) for more information on getting involved.
 
 ## 👋 Attribution
 
@@ -127,7 +132,8 @@ run reproducibly with:
 $ tox
 ```
 
-Additionally, these tests are automatically re-run with each commit in a [GitHub Action](https://github.com/biopragmatics/debio/actions?query=workflow%3ATests).
+Additionally, these tests are automatically re-run with each commit in
+a [GitHub Action](https://github.com/biopragmatics/debio/actions?query=workflow%3ATests).
 
 ### 📖 Building the Documentation
 
@@ -160,9 +166,11 @@ This script does the following:
 1. Uses [Bump2Version](https://github.com/c4urself/bump2version) to switch the version number in the `setup.cfg`,
    `src/debio/version.py`, and [`docs/source/conf.py`](docs/source/conf.py) to not have the `-dev` suffix
 2. Packages the code in both a tar archive and a wheel using [`build`](https://github.com/pypa/build)
-3. Uploads to PyPI using [`twine`](https://github.com/pypa/twine). Be sure to have a `.pypirc` file configured to avoid the need for manual input at this
+3. Uploads to PyPI using [`twine`](https://github.com/pypa/twine). Be sure to have a `.pypirc` file configured to avoid
+   the need for manual input at this
    step
 4. Push to GitHub. You'll need to make a release going with the commit where the version was bumped.
 5. Bump the version to the next patch. If you made big changes and want to bump the version by minor, you can
    use `tox -e bumpversion minor` after.
+
 </details>

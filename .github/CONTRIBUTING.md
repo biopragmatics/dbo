@@ -17,6 +17,43 @@ model for code contributions. Follow these steps:
 5. Repeat steps 3 and 4 as needed
 6. Submit a pull request back to the upstream repository
 
+### Curation Workflow
+
+#### Adding a new Object Property
+
+An object property is one that goes between two classes or two instances. DeBiO has 
+a file `typedefs.json` where new properties can be added. At minimum, they need:
+
+1. `identifier` - the local unique identifier
+2. `name` - the label
+3. `creator` - the ORCID ID of the contributor
+4. `description`
+
+There are other optional fields like:
+
+- `parents` - a list of one or more parent object properties
+- `xrefs` - see existing examples
+- `range` - an object type restriction
+- `domain` - a subject type restriction
+- `transitive` - true for relation X if `a X b` and `b X c` implies `a X c`
+- `holds_over_chain` - true for relation X that holds over chain C1, C2, ... if `a X b` implies
+  the existing of some intermediate nodes that `a C1 <> C2 <> ... <> b`
+
+#### Building the Resources
+
+After cloning, you can build the resource with:
+
+```shell
+python -m pip install tox
+tox -e export
+```
+
+This updates the content in the `/releases/latest/` folder.
+
+When you're ready for a release to PyPI, you can use `tox -e release`, but make sure that you're on the
+main branch, have no uncommitted changes, and have PyPI configured with `twine`, and have SSH pushing enabled.
+This makes a folder in `/releases/<version>/` and puts the current content there.
+
 ### Merge Model
 
 This repository uses [squash merges](https://docs.github.com/en/github/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-pull-request-commits)
