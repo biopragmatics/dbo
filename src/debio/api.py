@@ -7,7 +7,6 @@ from pathlib import Path
 from typing import Iterable, List, Optional
 
 import click
-
 from pyobo import Obo, Reference, SynonymTypeDef, Term, TypeDef
 
 from debio.resources import PROPERTIES, TERMS, TYPEDEFS
